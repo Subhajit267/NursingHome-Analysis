@@ -1,5 +1,8 @@
-# [file name]: run_analysis.py
-"""
+"""[file name]: run_analysis.py
+
+    Author: SUBHAJIT HALDER 
+       DATE: 27/09/2025
+       
 Main execution script for LittleSteps Data Analysis Pipeline
 This script orchestrates the complete data analysis pipeline from data generation
 through cleaning, analysis, and visualization.
@@ -106,4 +109,5 @@ def run_analysis():
 
 # Standard Python practice: only run if this is the main file
 if __name__ == "__main__":
+
     run_analysis()
