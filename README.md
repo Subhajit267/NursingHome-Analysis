@@ -1,4 +1,4 @@
-# 🏥 LittleSteps Nurse Scheduling Efficiency Analysis
+# 🏥 Nurse Scheduling Efficiency Analysis
 
 ## 📌 Project Overview
 This project analyzes **nurse scheduling and patient visit efficiency** for **LittleSteps**, an at-home healthcare startup.  
@@ -11,7 +11,7 @@ The main goals are:
 
 ## 📂 Repository Structure
 ```
-littlesteps-analysis/
+NursingHome-Analysis/
 ├── data/                # Raw and cleaned data files
 ├── scripts/             # Python scripts for data processing
 ├── notebooks/           # Jupyter notebooks for analysis
@@ -146,4 +146,6 @@ The analysis includes:
 ---
 
 ## 📬 Contact
-For questions or contributions, please reach out to the **LittleSteps Data Analytics Team**.  
+For questions or contributions, please reach out to:
+-Subhajit Halder
+-mail:subhajithalder267@outlook.com
