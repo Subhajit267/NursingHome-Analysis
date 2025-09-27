@@ -1,0 +1,604 @@
+visit_id,patient_id,nurse_id,visit_start_time,visit_end_time,service_type,visit_location,nurse_notes,service_type_cleaned,visit_location_cleaned,note_has_urgent,note_has_followup,note_has_stable,note_has_wound_dressing,note_has_patient_ok,note_has_lorem,visit_duration_minutes,is_duration_outlier
+1,P082,N04,2024-01-24 08:15:00,2024-01-24 10:10:00.000000000,Phisycal Therapy,Nrth,No notes provided,Physical Therapy,North,False,False,False,False,False,False,115.0,False
+2,P028,N08,2024-03-20 00:35:00,2024-03-20 02:17:00.000000000,Med Admin,West,No notes provided,Medication Administration,West,False,False,False,False,False,False,102.0,False
+3,P021,N14,2024-02-09 04:13:00,2024-02-09 10:44:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,391.0,False
+4,P034,N02,2024-03-15 17:07:00,2024-03-16 01:00:00.000000000,Med Admin,Nrth,No notes provided,Medication Administration,North,False,False,False,False,False,False,473.0,False
+5,P074,N07,2024-03-03 01:42:00,2024-03-03 03:39:00.000000000,Physical Therapy,Nrth,schedule revisit in 2 days,Physical Therapy,North,False,True,False,False,False,False,117.0,False
+6,P047,N06,2024-12-02 06:42:00,2024-02-12 08:59:00.000000000,Check up,South,No notes provided,General Check-up,South,False,False,False,False,False,False,-423223.0,True
+7,P082,N18,2024-01-22 10:53:00,2024-01-22 17:27:00.000000000,Wound Care,West,Patient stable.,Wound Care,West,False,False,True,False,True,False,394.0,False
+8,P073,N11,2024-01-21 15:25:00,2024-01-21 22:58:00.000000000,Medication Administration,South,urgent attention needed,Medication Administration,South,True,False,False,False,False,False,453.0,False
+9,P096,N19,2024-02-19 12:23:00,2024-02-19 14:16:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,113.0,False
+10,P088,N14,2024-03-03 12:24:00,2024-03-03 17:30:00.000000000,Medication Administration,Suth,No notes provided,Medication Administration,South,False,False,False,False,False,False,306.0,False
+11,P069,N09,2024-11-03 03:18:00,2024-11-03 07:01:00.000000000,Phisycal Therapy,East,Patient stable.,Physical Therapy,East,False,False,True,False,True,False,223.0,False
+12,P023,N17,2024-01-28 20:19:00,2024-01-29 03:30:00.000000000,Wund Care,South,Wound will be dressed soon,Wound Care,South,False,False,False,True,False,False,431.0,False
+13,P001,N20,2024-02-16 00:07:00,2024-02-16 08:03:00.000000000,General Check-up,Suth,schedule revisit in 2 days,General Check-up,South,False,True,False,False,False,False,476.0,False
+14,P011,N16,2024-01-25 17:49:00,2024-01-25 18:54:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,65.0,False
+15,P028,N18,2024-03-23 06:45:00,2024-03-23 09:25:00.000000000,Med Admin,Weerst,Lorem ipsum text $%^&,Medication Administration,West,False,False,False,False,False,True,160.0,False
+16,P044,N01,2024-03-18 07:37:00,2024-03-18 09:30:00.000000000,Wound Care,Nrth,Patient stable.,Wound Care,North,False,False,True,False,True,False,113.0,False
+17,P010,N17,2024-01-09 21:31:00,2024-01-09 23:21:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,110.0,False
+18,P056,N12,2024-02-14 14:55:00,2024-02-14 21:09:00.000000000,Wound Care,Nrth,Patient stable.,Wound Care,North,False,False,True,False,True,False,374.0,False
+19,P032,N07,2024-01-18 14:08:00,2024-01-18 17:45:00.000000000,Phisycal Therapy,Suth,Lorem ipsum text $%^&,Physical Therapy,South,False,False,False,False,False,True,217.0,False
+20,P071,N04,2024-01-21 17:53:00,2024-01-21 18:01:00.000000000,Check up,West,Follow-up urgently required,General Check-up,West,True,True,False,False,False,False,8.0,False
+21,P008,N06,2024-01-02 12:16:00,2024-01-02 20:11:00.000000000,Medication Administration,Suth,Nil,Medication Administration,South,False,False,False,False,True,False,475.0,False
+22,P092,N16,2024-01-07 09:13:00,2024-07-01 09:43:00.000000000,Wound Care,Weerst,Patient stable.,Wound Care,West,False,False,True,False,True,False,253470.0,True
+23,P068,N06,2024-01-17 02:54:00,2024-01-17 04:30:00.000000000,Check up,Nrth,schedule revisit in 2 days,General Check-up,North,False,True,False,False,False,False,96.0,False
+24,P075,N20,2024-01-20 02:26:00,2024-01-20 08:03:00.000000000,General Check-up,Suth,schedule revisit in 2 days,General Check-up,South,False,True,False,False,False,False,337.0,False
+25,P017,N10,2024-02-11 02:00:00,2024-11-02 05:55:00.000000000,Check up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,381835.0,True
+26,P009,N08,2024-02-10 05:28:00,2024-10-02 12:35:00.000000000,Physical Therapy,Esst,No notes provided,Physical Therapy,East,False,False,False,False,False,False,338827.0,True
+27,P034,N04,2024-01-24 17:09:00,2024-01-24 19:29:00.000000000,Physical Therapy,West,Wound will be dressed soon,Physical Therapy,West,False,False,False,True,False,False,140.0,False
+28,P063,N09,2024-01-03 20:27:00,2024-01-04 03:32:00.000000000,Physical Therapy,Esst,Patient stable.,Physical Therapy,East,False,False,True,False,True,False,425.0,False
+29,P095,N15,2024-03-23 13:35:00,2024-03-23 13:40:00.000000000,Check up,Nrth,Follow-up urgently required,General Check-up,North,True,True,False,False,False,False,5.0,False
+30,P019,N14,2024-02-01 09:23:00,2024-01-02 17:04:00.000000000,Wound Care,Weerst,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,-42739.0,True
+31,P072,N14,2024-03-24 04:59:00,2024-03-24 12:56:00.000000000,Wund Care,South,Follow-up urgently required,Wound Care,South,True,True,False,False,False,False,477.0,False
+32,P053,N08,2024-02-06 22:06:00,2024-02-07 01:22:00.000000000,Wound Care,East,schedule revisit in 2 days,Wound Care,East,False,True,False,False,False,False,196.0,False
+33,P030,N08,2024-01-22 06:25:00,2024-01-22 09:14:00.000000000,Physical Therapy,Nrth,urgent attention needed,Physical Therapy,North,True,False,False,False,False,False,169.0,False
+34,P069,N11,2024-04-01 08:11:00,2024-01-04 13:09:00.000000000,Physical Therapy,Esst,No notes provided,Physical Therapy,East,False,False,False,False,False,False,-126422.0,True
+35,P056,N20,2024-04-03 12:57:00,2024-03-28 07:05:34.615384616,Wund Care,Suth,Patient stable.,Wound Care,South,False,False,True,False,True,False,-8991.423076923067,True
+36,P069,N07,2024-02-14 02:42:00,2024-02-14 10:34:00.000000000,General Check-up,Weerst,No notes provided,General Check-up,West,False,False,False,False,False,False,472.0,False
+37,P042,N13,2024-10-03 17:08:00,2024-10-03 18:47:00.000000000,Med Admin,North,Follow-up urgently required,Medication Administration,North,True,True,False,False,False,False,99.0,False
+38,P001,N10,2024-02-07 13:50:00,2024-07-02 18:47:00.000000000,General Check-up,East,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,210537.0,True
+39,P095,N06,2024-03-03 09:32:00,2024-03-03 15:12:00.000000000,General Check-up,Nrth,schedule revisit in 2 days,General Check-up,North,False,True,False,False,False,False,340.0,False
+40,P004,N02,2024-01-16 19:54:00,2024-01-17 02:28:00.000000000,Check up,East,Nil,General Check-up,East,False,False,False,False,True,False,394.0,False
+41,P064,N13,2024-01-05 20:44:00,2024-05-01 20:47:00.000000000,Check up,North,No notes provided,General Check-up,North,False,False,False,False,False,False,168483.0,True
+42,P032,N04,2024-02-05 14:42:00,2024-05-02 19:14:00.000000000,General Check-up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,125552.0,True
+43,P061,N15,2024-02-25 07:53:00,2024-02-25 13:20:00.000000000,Physical Therapy,East,schedule revisit in 2 days,Physical Therapy,East,False,True,False,False,False,False,327.0,False
+44,P035,N11,2024-02-18 02:08:00,2024-02-18 03:26:00.000000000,Wund Care,North,Follow-up urgently required,Wound Care,North,True,True,False,False,False,False,78.0,False
+45,P070,N15,2024-02-02 06:53:00,2024-02-02 10:29:00.000000000,Med Admin,Esst,Nil,Medication Administration,East,False,False,False,False,True,False,216.0,False
+46,P050,N14,2024-03-24 23:34:00,2024-03-25 06:24:00.000000000,Wund Care,East,schedule revisit in 2 days,Wound Care,East,False,True,False,False,False,False,410.0,False
+47,P086,N13,2024-03-06 14:58:00,2024-06-03 16:04:00.000000000,Wound Care,North,Patient stable.,Wound Care,North,False,False,True,False,True,False,128226.0,True
+48,P024,N02,2024-02-13 10:13:00,2024-02-13 14:06:00.000000000,General Check-up,Weerst,No notes provided,General Check-up,West,False,False,False,False,False,False,233.0,False
+49,P003,N18,2024-01-12 07:41:00,2024-01-12 08:17:00.000000000,Wound Care,Esst,schedule revisit in 2 days,Wound Care,East,False,True,False,False,False,False,36.0,False
+50,P061,N04,2024-03-07 14:44:00,2024-03-07 16:56:00.000000000,General Check-up,South,No notes provided,General Check-up,South,False,False,False,False,False,False,132.0,False
+51,P040,N19,2024-03-13 12:45:00,2024-03-13 14:27:00.000000000,Check up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,102.0,False
+52,P016,N19,2024-12-01 17:27:00,2024-12-10 08:45:37.931034482,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,12438.632183908032,True
+53,P063,N04,2024-02-12 20:57:00,2024-02-13 04:02:00.000000000,Medication Administration,South,Nil,Medication Administration,South,False,False,False,False,True,False,425.0,False
+54,P079,N18,2024-02-15 13:52:00,2024-02-15 20:07:00.000000000,Physical Therapy,Weerst,schedule revisit in 2 days,Physical Therapy,West,False,True,False,False,False,False,375.0,False
+55,P060,N19,2024-03-22 12:21:00,2024-03-22 12:36:00.000000000,Medication Administration,Weerst,Follow-up urgently required,Medication Administration,West,True,True,False,False,False,False,15.0,False
+56,P036,N20,2024-09-03 17:00:00,2024-03-09 21:25:00.000000000,Wund Care,Nrth,schedule revisit in 2 days,Wound Care,North,False,True,False,False,False,False,-256055.0,True
+57,P089,N16,2024-03-23 15:28:00,2024-03-23 22:14:00.000000000,Wound Care,Nrth,urgent attention needed,Wound Care,North,True,False,False,False,False,False,406.0,False
+58,P075,N12,2024-02-18 16:22:00,2024-02-18 20:00:00.000000000,General Check-up,Weerst,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,218.0,False
+59,P025,N11,2024-01-24 17:48:00,2024-01-24 23:42:00.000000000,Phisycal Therapy,West,schedule revisit in 2 days,Physical Therapy,West,False,True,False,False,False,False,354.0,False
+60,P098,N17,2024-03-10 03:53:00,2024-03-22 18:38:30.508474576,Physical Therapy,West,Wound will be dressed soon,Physical Therapy,West,False,False,False,True,False,False,18165.50847457627,True
+61,P036,N02,2024-01-18 09:44:00,2024-01-18 10:49:00.000000000,Medication Administration,Nrth,Patient stable.,Medication Administration,North,False,False,True,False,True,False,65.0,False
+62,P024,N02,2024-02-28 15:07:00,2024-02-28 22:08:00.000000000,Check up,North,No notes provided,General Check-up,North,False,False,False,False,False,False,421.0,False
+63,P020,N19,2024-02-03 07:07:00,2024-02-03 11:53:00.000000000,Med Admin,West,No notes provided,Medication Administration,West,False,False,False,False,False,False,286.0,False
+64,P076,N14,2024-02-19 19:03:00,2024-02-20 00:16:00.000000000,Check up,West,schedule revisit in 2 days,General Check-up,West,False,True,False,False,False,False,313.0,False
+65,P071,N03,2024-01-01 13:28:00,2024-01-01 19:21:00.000000000,Medication Administration,Suth,Patient stable.,Medication Administration,South,False,False,True,False,True,False,353.0,False
+66,P059,N03,2024-08-03 08:50:00,2024-03-08 15:36:00.000000000,Wund Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,-212714.0,True
+67,P019,N03,2024-01-06 09:38:00,2024-06-01 16:02:00.000000000,Physical Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,212064.0,True
+68,P035,N17,2024-03-16 14:05:00,2024-03-31 08:11:18.591549295,Wound Care,North,Wound will be dressed soon,Wound Care,North,False,False,False,True,False,False,21246.309859154917,True
+69,P087,N19,2024-01-03 21:52:00,2024-02-03 00:10:00.000000000,Wound Care,South,Lorem ipsum text $%^&,Wound Care,South,False,False,False,False,False,True,43338.0,True
+70,P075,N14,2024-03-27 15:05:00,2024-03-27 19:06:00.000000000,General Check-up,North,Wound will be dressed soon,General Check-up,North,False,False,False,True,False,False,241.0,False
+71,P053,N16,2024-02-22 12:52:00,2024-02-22 19:22:00.000000000,Wound Care,East,No notes provided,Wound Care,East,False,False,False,False,False,False,390.0,False
+72,P052,N17,2024-01-22 17:29:00,2024-01-22 21:01:00.000000000,Wound Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,212.0,False
+73,P098,N02,2024-01-09 17:08:00,2024-01-10 01:03:00.000000000,Physical Therapy,East,Lorem ipsum text $%^&,Physical Therapy,East,False,False,False,False,False,True,475.0,False
+74,P031,N06,2024-02-18 00:35:00,2024-02-18 04:04:00.000000000,Check up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,209.0,False
+75,P092,N10,2024-03-23 08:26:00,2024-03-23 15:34:00.000000000,Medication Administration,East,schedule revisit in 2 days,Medication Administration,East,False,True,False,False,False,False,428.0,False
+76,P077,N17,2024-03-05 02:17:00,2024-03-05 08:53:00.000000000,Med Admin,Weerst,No notes provided,Medication Administration,West,False,False,False,False,False,False,396.0,False
+77,P076,N19,2024-03-16 04:28:00,2024-03-16 09:04:00.000000000,Medication Administration,Weerst,Wound will be dressed soon,Medication Administration,West,False,False,False,True,False,False,276.0,False
+78,P025,N08,2024-03-13 07:54:00,2024-03-13 14:32:00.000000000,Med Admin,Esst,Wound will be dressed soon,Medication Administration,East,False,False,False,True,False,False,398.0,False
+79,P050,N05,2024-02-02 04:32:00,2024-02-02 09:35:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,303.0,False
+80,P019,N14,2024-05-03 02:30:00,2024-03-05 09:11:00.000000000,Physical Therapy,Weerst,Nil,Physical Therapy,West,False,False,False,False,True,False,-84559.0,True
+81,P069,N13,2024-02-21 22:56:00,2024-02-22 05:25:00.000000000,Medication Administration,Esst,No notes provided,Medication Administration,East,False,False,False,False,False,False,389.0,False
+82,P030,N03,2024-04-02 20:45:00,2024-02-05 04:12:00.000000000,Check up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,-83073.0,True
+83,P008,N10,2024-02-12 13:09:00,2024-02-12 15:15:00.000000000,Med Admin,South,Follow-up urgently required,Medication Administration,South,True,True,False,False,False,False,126.0,False
+84,P088,N08,2024-02-19 04:14:00,2024-02-19 08:11:00.000000000,Physical Therapy,East,urgent attention needed,Physical Therapy,East,True,False,False,False,False,False,237.0,False
+85,P037,N18,2024-01-03 14:22:00,2024-01-03 19:23:00.000000000,Physical Therapy,North,urgent attention needed,Physical Therapy,North,True,False,False,False,False,False,301.0,False
+86,P062,N04,2024-01-13 18:22:00,2024-01-13 23:17:00.000000000,Physical Therapy,Suth,Patient stable.,Physical Therapy,South,False,False,True,False,True,False,295.0,False
+87,P088,N02,2024-03-24 15:53:00,2024-03-24 23:36:00.000000000,Physical Therapy,West,Wound will be dressed soon,Physical Therapy,West,False,False,False,True,False,False,463.0,False
+88,P097,N05,2024-04-03 20:41:00,2024-03-04 21:02:00.000000000,Physical Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,-43179.0,True
+89,P038,N11,2024-03-14 05:12:00,2024-03-14 06:20:00.000000000,General Check-up,Suth,Follow-up urgently required,General Check-up,South,True,True,False,False,False,False,68.0,False
+90,P044,N04,2024-02-03 04:48:00,2024-02-03 06:44:00.000000000,Med Admin,Weerst,No notes provided,Medication Administration,West,False,False,False,False,False,False,116.0,False
+91,P048,N09,2024-03-13 20:23:00,2024-03-13 21:19:00.000000000,Wund Care,East,Patient stable.,Wound Care,East,False,False,True,False,True,False,56.0,False
+92,P083,N03,2024-03-27 14:58:00,2024-03-27 20:57:00.000000000,Physical Therapy,North,No notes provided,Physical Therapy,North,False,False,False,False,False,False,359.0,False
+93,P064,N04,2024-01-08 17:08:00,2024-08-01 20:27:00.000000000,Medication Administration,Weerst,No notes provided,Medication Administration,West,False,False,False,False,False,False,296839.0,True
+94,P054,N04,2024-02-20 13:17:00,2024-02-20 13:34:00.000000000,General Check-up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,17.0,False
+95,P088,N12,2024-03-21 11:03:00,2024-03-21 14:27:00.000000000,Physical Therapy,West,No notes provided,Physical Therapy,West,False,False,False,False,False,False,204.0,False
+96,P077,N01,2024-01-26 10:15:00,2024-01-26 11:20:00.000000000,Wund Care,Nrth,No notes provided,Wound Care,North,False,False,False,False,False,False,65.0,False
+97,P043,N05,2024-03-01 08:54:00,2024-01-03 10:09:00.000000000,Phisycal Therapy,Suth,Follow-up urgently required,Physical Therapy,South,True,True,False,False,False,False,-83445.0,True
+98,P046,N08,2024-11-03 00:11:00,2024-03-11 02:27:00.000000000,Wound Care,South,Nil,Wound Care,South,False,False,False,False,True,False,-341144.0,True
+99,P100,N12,2024-03-19 03:28:00,2024-03-19 07:46:00.000000000,Wund Care,Esst,No notes provided,Wound Care,East,False,False,False,False,False,False,258.0,False
+100,P062,N13,2024-02-22 03:31:00,2024-02-22 09:36:00.000000000,Medication Administration,Nrth,No notes provided,Medication Administration,North,False,False,False,False,False,False,365.0,False
+101,P080,N19,2024-03-23 10:24:00,2024-03-23 15:30:00.000000000,Physical Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,306.0,False
+102,P084,N18,2024-03-28 06:27:00,2024-03-28 10:19:00.000000000,Wund Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,232.0,False
+103,P055,N11,2024-03-09 11:09:00,2024-03-09 17:01:00.000000000,Medication Administration,Nrth,No notes provided,Medication Administration,North,False,False,False,False,False,False,352.0,False
+104,P048,N05,2024-03-02 18:35:00,2024-02-03 23:23:00.000000000,General Check-up,Nrth,Nil,General Check-up,North,False,False,False,False,True,False,-40032.0,True
+105,P093,N02,2024-02-20 09:22:00,2024-02-20 10:16:00.000000000,Wund Care,South,Lorem ipsum text $%^&,Wound Care,South,False,False,False,False,False,True,54.0,False
+106,P015,N09,2024-03-08 13:54:00,2024-03-08 18:42:00.000000000,Wound Care,Suth,Patient stable.,Wound Care,South,False,False,True,False,True,False,288.0,False
+107,P044,N12,2024-06-01 04:36:00,2024-06-01 10:13:00.000000000,Med Admin,Nrth,No notes provided,Medication Administration,North,False,False,False,False,False,False,337.0,False
+108,P068,N07,2024-02-14 14:21:00,2024-02-14 15:42:00.000000000,General Check-up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,81.0,False
+109,P021,N20,2024-01-22 02:17:00,2024-01-22 06:04:00.000000000,Med Admin,East,Lorem ipsum text $%^&,Medication Administration,East,False,False,False,False,False,True,227.0,False
+110,P045,N14,2024-01-10 21:43:00,2024-01-11 02:47:00.000000000,Medication Administration,Suth,No notes provided,Medication Administration,South,False,False,False,False,False,False,304.0,False
+111,P027,N10,2024-01-25 04:48:00,2024-01-25 06:59:00.000000000,Physical Therapy,Weerst,No notes provided,Physical Therapy,West,False,False,False,False,False,False,131.0,False
+112,P049,N18,2024-08-03 16:35:00,2024-03-08 23:42:00.000000000,General Check-up,Nrth,Nil,General Check-up,North,False,False,False,False,True,False,-212693.0,True
+113,P010,N11,2024-03-14 18:25:00,2024-03-15 00:29:00.000000000,Med Admin,Suth,No notes provided,Medication Administration,South,False,False,False,False,False,False,364.0,False
+114,P080,N15,2024-12-03 02:27:00,2024-03-12 09:40:00.000000000,Check up,West,Nil,General Check-up,West,False,False,False,False,True,False,-382607.0,True
+115,P040,N11,2024-01-11 05:04:00,2024-11-01 09:26:00.000000000,Check up,West,Wound will be dressed soon,General Check-up,West,False,False,False,True,False,False,425062.0,True
+116,P019,N08,2024-05-01 08:12:00,2024-01-05 09:41:00.000000000,Phisycal Therapy,Nrth,Follow-up urgently required,Physical Therapy,North,True,True,False,False,False,False,-168391.0,True
+117,P075,N15,2024-03-19 20:40:00,2024-03-20 02:00:00.000000000,General Check-up,Weerst,Follow-up urgently required,General Check-up,West,True,True,False,False,False,False,320.0,False
+118,P036,N19,2024-01-12 16:04:00,2024-01-12 18:43:00.000000000,Medication Administration,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,159.0,False
+119,P012,N20,2024-03-17 12:29:00,2024-03-17 17:27:00.000000000,Wound Care,East,schedule revisit in 2 days,Wound Care,East,False,True,False,False,False,False,298.0,False
+120,P008,N15,2024-01-26 10:45:00,2024-01-26 11:29:00.000000000,Phisycal Therapy,Esst,schedule revisit in 2 days,Physical Therapy,East,False,True,False,False,False,False,44.0,False
+121,P079,N06,2024-02-12 09:24:00,2024-02-12 12:54:00.000000000,General Check-up,Esst,Wound will be dressed soon,General Check-up,East,False,False,False,True,False,False,210.0,False
+122,P037,N09,2024-03-28 21:58:00,2024-03-29 03:07:00.000000000,Phisycal Therapy,Weerst,No notes provided,Physical Therapy,West,False,False,False,False,False,False,309.0,False
+123,P084,N13,2024-01-20 22:05:00,2024-01-21 00:44:00.000000000,Med Admin,Weerst,Follow-up urgently required,Medication Administration,West,True,True,False,False,False,False,159.0,False
+124,P088,N17,2024-01-21 21:27:00,2024-01-22 01:48:00.000000000,General Check-up,Esst,Wound will be dressed soon,General Check-up,East,False,False,False,True,False,False,261.0,False
+125,P099,N16,2024-08-01 04:09:00,2024-08-01 04:49:00.000000000,Physical Therapy,Nrth,No notes provided,Physical Therapy,North,False,False,False,False,False,False,40.0,False
+126,P044,N20,2024-01-20 12:09:00,2024-01-20 13:33:00.000000000,Phisycal Therapy,South,Lorem ipsum text $%^&,Physical Therapy,South,False,False,False,False,False,True,84.0,False
+127,P057,N20,2024-02-25 23:50:00,2024-02-26 03:40:00.000000000,Wund Care,West,urgent attention needed,Wound Care,West,True,False,False,False,False,False,230.0,False
+128,P057,N15,2024-02-25 12:32:00,2024-02-25 17:03:00.000000000,Med Admin,South,No notes provided,Medication Administration,South,False,False,False,False,False,False,271.0,False
+129,P062,N12,2024-03-04 22:54:00,2024-03-05 03:19:00.000000000,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,265.0,False
+130,P056,N03,2024-01-27 14:56:00,2024-01-27 17:55:00.000000000,Wound Care,North,Patient stable.,Wound Care,North,False,False,True,False,True,False,179.0,False
+131,P011,N12,2024-01-01 10:59:00,2024-01-01 11:50:00.000000000,General Check-up,South,Follow-up urgently required,General Check-up,South,True,True,False,False,False,False,51.0,False
+132,P018,N16,2024-02-20 00:57:00,2024-02-20 01:38:00.000000000,Wound Care,Suth,schedule revisit in 2 days,Wound Care,South,False,True,False,False,False,False,41.0,False
+133,P055,N04,2024-02-08 09:07:00,2024-02-08 09:32:00.000000000,Wund Care,North,Lorem ipsum text $%^&,Wound Care,North,False,False,False,False,False,True,25.0,False
+134,P069,N01,2024-03-17 18:15:00,2024-03-18 00:23:00.000000000,Phisycal Therapy,Suth,Nil,Physical Therapy,South,False,False,False,False,True,False,368.0,False
+135,P024,N03,2024-03-12 02:33:00,2024-12-03 07:12:00.000000000,Wound Care,North,Lorem ipsum text $%^&,Wound Care,North,False,False,False,False,False,True,383319.0,True
+136,P096,N01,2024-02-26 02:22:00,2024-02-26 04:26:00.000000000,Check up,Weerst,Follow-up urgently required,General Check-up,West,True,True,False,False,False,False,124.0,False
+137,P023,N15,2024-03-16 20:11:00,2024-03-17 03:07:00.000000000,Phisycal Therapy,Nrth,Lorem ipsum text $%^&,Physical Therapy,North,False,False,False,False,False,True,416.0,False
+138,P006,N11,2024-02-17 12:52:00,2024-02-17 17:31:00.000000000,Medication Administration,Suth,Patient stable.,Medication Administration,South,False,False,True,False,True,False,279.0,False
+139,P007,N11,2024-02-04 11:27:00,2024-02-04 19:03:00.000000000,Med Admin,East,Nil,Medication Administration,East,False,False,False,False,True,False,456.0,False
+140,P067,N09,2024-01-24 13:05:00,2024-01-24 16:46:00.000000000,Phisycal Therapy,Suth,Wound will be dressed soon,Physical Therapy,South,False,False,False,True,False,False,221.0,False
+141,P058,N20,2024-03-14 05:44:00,2024-03-14 09:32:00.000000000,General Check-up,East,Patient stable.,General Check-up,East,False,False,True,False,True,False,228.0,False
+142,P082,N02,2024-01-22 20:25:00,2024-01-22 23:32:00.000000000,Phisycal Therapy,Esst,No notes provided,Physical Therapy,East,False,False,False,False,False,False,187.0,False
+143,P009,N08,2024-03-12 11:24:00,2024-03-12 16:15:00.000000000,Wound Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,291.0,False
+144,P018,N17,2024-02-13 10:41:00,2024-02-13 13:04:00.000000000,Wund Care,Nrth,Patient stable.,Wound Care,North,False,False,True,False,True,False,143.0,False
+145,P072,N04,2024-02-25 08:45:00,2024-02-25 12:34:00.000000000,Wund Care,Suth,No notes provided,Wound Care,South,False,False,False,False,False,False,229.0,False
+146,P023,N15,2024-01-26 21:54:00,2024-01-27 00:38:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,164.0,False
+147,P092,N06,2024-02-17 07:07:00,2024-02-17 08:50:00.000000000,Phisycal Therapy,West,Lorem ipsum text $%^&,Physical Therapy,West,False,False,False,False,False,True,103.0,False
+148,P071,N05,2024-03-03 02:19:00,2024-03-03 05:43:00.000000000,Medication Administration,North,Nil,Medication Administration,North,False,False,False,False,True,False,204.0,False
+149,P010,N15,2024-02-22 16:22:00,2024-02-22 17:28:00.000000000,Phisycal Therapy,South,Nil,Physical Therapy,South,False,False,False,False,True,False,66.0,False
+150,P039,N06,2024-01-11 22:14:00,2024-12-01 01:12:00.000000000,Physical Therapy,Nrth,urgent attention needed,Physical Therapy,North,True,False,False,False,False,False,466738.0,True
+151,P081,N10,2024-03-18 02:32:00,2024-03-18 08:01:00.000000000,Phisycal Therapy,South,Follow-up urgently required,Physical Therapy,South,True,True,False,False,False,False,329.0,False
+152,P073,N02,2024-03-01 01:41:00,2024-03-13 16:26:30.508474576,Physical Therapy,West,Nil,Physical Therapy,West,False,False,False,False,True,False,18165.50847457627,True
+153,P070,N10,2024-03-10 15:15:00,2024-10-03 22:08:00.000000000,Med Admin,Suth,Lorem ipsum text $%^&,Medication Administration,South,False,False,False,False,False,True,298493.0,True
+154,P062,N15,2024-01-11 19:09:00,2024-01-11 21:50:00.000000000,General Check-up,Weerst,Nil,General Check-up,West,False,False,False,False,True,False,161.0,False
+155,P031,N15,2024-01-09 14:15:00,2024-09-01 15:28:00.000000000,Check up,Esst,urgent attention needed,General Check-up,East,True,False,False,False,False,False,339913.0,True
+156,P021,N11,2024-03-24 10:12:00,2024-03-24 16:43:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,391.0,False
+157,P012,N13,2024-03-15 07:13:00,2024-03-15 12:12:00.000000000,General Check-up,Esst,Patient stable.,General Check-up,East,False,False,True,False,True,False,299.0,False
+158,P087,N16,2024-02-18 00:54:00,2024-02-18 01:50:00.000000000,Med Admin,South,urgent attention needed,Medication Administration,South,True,False,False,False,False,False,56.0,False
+159,P052,N02,2024-03-18 06:23:00,2024-03-18 11:07:00.000000000,Physical Therapy,Nrth,Nil,Physical Therapy,North,False,False,False,False,True,False,284.0,False
+160,P080,N20,2024-01-05 03:25:00,2024-05-01 06:37:00.000000000,General Check-up,Weerst,Follow-up urgently required,General Check-up,West,True,True,False,False,False,False,168672.0,True
+161,P006,N02,2024-01-23 10:51:00,2024-01-23 14:54:00.000000000,Medication Administration,South,No notes provided,Medication Administration,South,False,False,False,False,False,False,243.0,False
+162,P051,N20,2024-03-27 09:37:00,2024-03-27 12:30:00.000000000,Medication Administration,Suth,Lorem ipsum text $%^&,Medication Administration,South,False,False,False,False,False,True,173.0,False
+163,P054,N19,2024-02-26 23:55:00,2024-02-27 05:48:00.000000000,Wound Care,East,urgent attention needed,Wound Care,East,True,False,False,False,False,False,353.0,False
+164,P075,N16,2024-01-17 20:46:00,2024-01-18 02:04:00.000000000,Med Admin,South,schedule revisit in 2 days,Medication Administration,South,False,True,False,False,False,False,318.0,False
+165,P003,N15,2024-02-14 04:26:00,2024-02-14 10:20:00.000000000,Wund Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,354.0,False
+166,P008,N05,2024-03-07 17:20:00,2024-03-07 23:00:00.000000000,Medication Administration,North,Wound will be dressed soon,Medication Administration,North,False,False,False,True,False,False,340.0,False
+167,P046,N09,2024-03-16 06:15:00,2024-03-16 08:38:00.000000000,Physical Therapy,West,urgent attention needed,Physical Therapy,West,True,False,False,False,False,False,143.0,False
+168,P041,N16,2024-02-18 23:17:00,2024-02-19 01:45:00.000000000,Check up,North,Nil,General Check-up,North,False,False,False,False,True,False,148.0,False
+169,P092,N03,2024-02-15 20:16:00,2024-02-16 02:39:00.000000000,Medication Administration,West,schedule revisit in 2 days,Medication Administration,West,False,True,False,False,False,False,383.0,False
+170,P018,N04,2024-03-24 18:15:00,2024-03-24 20:20:00.000000000,Wound Care,West,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,125.0,False
+171,P013,N05,2024-01-18 05:26:00,2024-01-18 11:01:00.000000000,Medication Administration,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,335.0,False
+172,P099,N03,2024-03-19 07:34:00,2024-03-19 13:53:00.000000000,Wound Care,South,Nil,Wound Care,South,False,False,False,False,True,False,379.0,False
+173,P064,N06,2024-03-28 09:56:00,2024-03-28 10:16:00.000000000,Wound Care,Suth,No notes provided,Wound Care,South,False,False,False,False,False,False,20.0,False
+174,P068,N16,2024-01-28 16:29:00,2024-01-28 18:49:00.000000000,Wund Care,Nrth,Wound will be dressed soon,Wound Care,North,False,False,False,True,False,False,140.0,False
+175,P024,N01,2024-03-11 09:36:00,2024-11-03 15:22:00.000000000,Wund Care,South,Nil,Wound Care,South,False,False,False,False,True,False,341626.0,True
+176,P013,N06,2024-01-16 10:59:00,2024-01-16 13:07:00.000000000,Wound Care,Suth,Nil,Wound Care,South,False,False,False,False,True,False,128.0,False
+177,P039,N19,2024-03-19 00:16:00,2024-03-19 05:51:00.000000000,General Check-up,West,Patient stable.,General Check-up,West,False,False,True,False,True,False,335.0,False
+178,P088,N17,2024-03-25 09:44:00,2024-03-25 10:45:00.000000000,Physical Therapy,Weerst,schedule revisit in 2 days,Physical Therapy,West,False,True,False,False,False,False,61.0,False
+179,P078,N12,2024-02-23 17:58:00,2024-02-23 22:00:00.000000000,Wund Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,242.0,False
+180,P073,N04,2024-01-27 17:57:00,2024-01-27 22:16:00.000000000,Wund Care,South,Follow-up urgently required,Wound Care,South,True,True,False,False,False,False,259.0,False
+181,P092,N19,2024-03-02 16:28:00,2024-02-03 23:23:00.000000000,Wound Care,East,No notes provided,Wound Care,East,False,False,False,False,False,False,-39905.0,True
+182,P060,N10,2024-03-01 12:16:00,2024-03-01 19:15:00.000000000,Wound Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,419.0,False
+183,P008,N03,2024-02-02 09:26:00,2024-02-02 10:59:00.000000000,Phisycal Therapy,North,Wound will be dressed soon,Physical Therapy,North,False,False,False,True,False,False,93.0,False
+184,P049,N03,2024-03-22 17:08:00,2024-03-22 22:43:00.000000000,General Check-up,Nrth,Follow-up urgently required,General Check-up,North,True,True,False,False,False,False,335.0,False
+185,P029,N01,2024-01-10 14:43:00,2024-01-10 20:52:00.000000000,Med Admin,North,schedule revisit in 2 days,Medication Administration,North,False,True,False,False,False,False,369.0,False
+186,P093,N04,2024-01-26 21:26:00,2024-01-27 02:41:00.000000000,Wound Care,West,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,315.0,False
+187,P087,N02,2024-01-24 01:25:00,2024-01-24 05:10:00.000000000,Wund Care,West,Patient stable.,Wound Care,West,False,False,True,False,True,False,225.0,False
+188,P094,N19,2024-02-19 19:49:00,2024-02-20 01:34:00.000000000,General Check-up,West,urgent attention needed,General Check-up,West,True,False,False,False,False,False,345.0,False
+189,P036,N02,2024-03-19 23:58:00,2024-03-20 01:28:00.000000000,Med Admin,East,Patient stable.,Medication Administration,East,False,False,True,False,True,False,90.0,False
+190,P041,N14,2024-02-05 09:24:00,2024-05-02 10:59:00.000000000,Medication Administration,West,schedule revisit in 2 days,Medication Administration,West,False,True,False,False,False,False,125375.0,True
+191,P008,N18,2024-02-14 17:33:00,2024-02-14 18:42:00.000000000,Med Admin,West,urgent attention needed,Medication Administration,West,True,False,False,False,False,False,69.0,False
+192,P048,N03,2024-03-24 06:03:00,2024-03-24 08:21:00.000000000,Med Admin,Esst,No notes provided,Medication Administration,East,False,False,False,False,False,False,138.0,False
+193,P062,N07,2024-02-10 00:13:00,2024-10-02 08:13:00.000000000,Wund Care,Nrth,Lorem ipsum text $%^&,Wound Care,North,False,False,False,False,False,True,338880.0,True
+194,P031,N18,2024-02-25 09:24:00,2024-02-25 13:23:00.000000000,General Check-up,Suth,urgent attention needed,General Check-up,South,True,False,False,False,False,False,239.0,False
+195,P093,N16,2024-02-07 11:20:00,2024-02-07 14:52:00.000000000,Wound Care,West,Follow-up urgently required,Wound Care,West,True,True,False,False,False,False,212.0,False
+196,P093,N14,2024-05-02 06:21:00,2024-05-02 08:19:00.000000000,Med Admin,West,Lorem ipsum text $%^&,Medication Administration,West,False,False,False,False,False,True,118.0,False
+197,P098,N16,2024-03-21 23:31:00,2024-03-22 03:27:00.000000000,Phisycal Therapy,Weerst,Follow-up urgently required,Physical Therapy,West,True,True,False,False,False,False,236.0,False
+198,P070,N02,2024-03-02 02:52:00,2024-02-03 08:35:00.000000000,Wound Care,Esst,Nil,Wound Care,East,False,False,False,False,True,False,-39977.0,True
+199,P002,N07,2024-03-15 11:03:00,2024-03-15 16:20:00.000000000,Medication Administration,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,317.0,False
+200,P068,N09,2024-03-10 00:32:00,2024-10-03 07:29:00.000000000,Med Admin,South,No notes provided,Medication Administration,South,False,False,False,False,False,False,298497.0,True
+201,P068,N09,2024-09-02 12:05:00,2024-02-09 15:17:00.000000000,Med Admin,East,schedule revisit in 2 days,Medication Administration,East,False,True,False,False,False,False,-296448.0,True
+202,P011,N02,2024-01-13 12:24:00,2024-01-13 17:07:00.000000000,Medication Administration,Esst,Patient stable.,Medication Administration,East,False,False,True,False,True,False,283.0,False
+203,P083,N11,2024-03-28 03:57:00,2024-03-28 08:28:00.000000000,Wound Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,271.0,False
+204,P010,N09,2024-03-19 21:02:00,2024-03-19 22:34:00.000000000,General Check-up,Esst,schedule revisit in 2 days,General Check-up,East,False,True,False,False,False,False,92.0,False
+205,P051,N03,2024-06-02 18:15:00,2024-02-06 23:06:00.000000000,Med Admin,Weerst,Nil,Medication Administration,West,False,False,False,False,True,False,-168189.0,True
+206,P011,N17,2024-12-03 01:06:00,2024-12-03 04:50:00.000000000,Wund Care,Nrth,Wound will be dressed soon,Wound Care,North,False,False,False,True,False,False,224.0,False
+207,P100,N11,2024-01-21 08:50:00,2024-01-21 12:41:00.000000000,Medication Administration,West,Wound will be dressed soon,Medication Administration,West,False,False,False,True,False,False,231.0,False
+208,P085,N13,2024-01-25 19:18:00,2024-01-26 02:07:00.000000000,Wund Care,Nrth,No notes provided,Wound Care,North,False,False,False,False,False,False,409.0,False
+209,P020,N13,2024-02-12 03:05:00,2024-02-12 03:08:00.000000000,Physical Therapy,East,Wound will be dressed soon,Physical Therapy,East,False,False,False,True,False,False,3.0,False
+210,P058,N18,2024-03-17 13:06:00,2024-03-17 13:20:00.000000000,Check up,Weerst,No notes provided,General Check-up,West,False,False,False,False,False,False,14.0,False
+211,P050,N01,2024-02-14 12:49:00,2024-02-14 13:33:00.000000000,Wund Care,South,Nil,Wound Care,South,False,False,False,False,True,False,44.0,False
+212,P019,N03,2024-01-14 08:26:00,2024-01-14 11:00:00.000000000,Medication Administration,Nrth,Wound will be dressed soon,Medication Administration,North,False,False,False,True,False,False,154.0,False
+213,P079,N07,2024-02-04 04:19:00,2024-02-04 04:23:00.000000000,Med Admin,Weerst,Nil,Medication Administration,West,False,False,False,False,True,False,4.0,False
+214,P084,N20,2024-01-10 10:38:00,2024-01-10 16:34:00.000000000,Wund Care,East,Wound will be dressed soon,Wound Care,East,False,False,False,True,False,False,356.0,False
+215,P089,N16,2024-03-26 07:20:00,2024-03-26 10:33:00.000000000,Physical Therapy,North,Wound will be dressed soon,Physical Therapy,North,False,False,False,True,False,False,193.0,False
+216,P024,N18,2024-01-24 14:45:00,2024-01-24 16:33:00.000000000,Medication Administration,Suth,No notes provided,Medication Administration,South,False,False,False,False,False,False,108.0,False
+217,P031,N09,2024-05-03 22:27:00,2024-03-06 05:12:00.000000000,Med Admin,Nrth,Lorem ipsum text $%^&,Medication Administration,North,False,False,False,False,False,True,-84555.0,True
+218,P089,N14,2024-02-03 11:44:00,2024-02-03 19:23:00.000000000,Check up,Nrth,schedule revisit in 2 days,General Check-up,North,False,True,False,False,False,False,459.0,False
+219,P006,N19,2024-03-22 20:25:00,2024-03-23 02:51:00.000000000,General Check-up,North,No notes provided,General Check-up,North,False,False,False,False,False,False,386.0,False
+220,P067,N18,2024-03-23 18:14:00,2024-03-23 22:03:00.000000000,General Check-up,North,Lorem ipsum text $%^&,General Check-up,North,False,False,False,False,False,True,229.0,False
+221,P004,N16,2024-01-10 13:58:00,2024-01-10 14:42:00.000000000,Check up,South,Wound will be dressed soon,General Check-up,South,False,False,False,True,False,False,44.0,False
+222,P062,N12,2024-02-04 14:46:00,2024-02-04 20:43:00.000000000,Medication Administration,Weerst,No notes provided,Medication Administration,West,False,False,False,False,False,False,357.0,False
+223,P044,N04,2024-03-26 05:59:00,2024-03-26 12:19:00.000000000,Wund Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,380.0,False
+224,P030,N13,2024-06-03 05:40:00,2024-06-03 11:17:00.000000000,Med Admin,North,Patient stable.,Medication Administration,North,False,False,True,False,True,False,337.0,False
+225,P055,N13,2024-01-23 06:13:00,2024-01-23 08:36:00.000000000,Check up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,143.0,False
+226,P034,N16,2024-03-21 10:38:00,2024-03-21 13:57:00.000000000,Med Admin,Nrth,Wound will be dressed soon,Medication Administration,North,False,False,False,True,False,False,199.0,False
+227,P091,N10,2024-03-19 02:43:00,2024-03-19 03:52:00.000000000,General Check-up,Nrth,schedule revisit in 2 days,General Check-up,North,False,True,False,False,False,False,69.0,False
+228,P066,N13,2024-02-20 04:36:00,2024-02-20 07:53:00.000000000,Med Admin,South,Lorem ipsum text $%^&,Medication Administration,South,False,False,False,False,False,True,197.0,False
+229,P023,N18,2024-01-16 09:08:00,2024-01-16 10:44:00.000000000,General Check-up,East,Patient stable.,General Check-up,East,False,False,True,False,True,False,96.0,False
+230,P050,N18,2024-03-21 15:26:00,2024-03-21 21:17:00.000000000,Medication Administration,North,No notes provided,Medication Administration,North,False,False,False,False,False,False,351.0,False
+231,P098,N08,2024-02-02 08:14:00,2024-02-02 12:50:00.000000000,Physical Therapy,South,Lorem ipsum text $%^&,Physical Therapy,South,False,False,False,False,False,True,276.0,False
+232,P066,N04,2024-04-03 08:49:00,2024-03-04 13:28:00.000000000,General Check-up,Esst,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,-42921.0,True
+233,P084,N08,2024-02-28 01:28:00,2024-02-28 03:43:00.000000000,General Check-up,Nrth,Lorem ipsum text $%^&,General Check-up,North,False,False,False,False,False,True,135.0,False
+234,P089,N12,2024-03-20 20:27:00,2024-03-20 21:52:00.000000000,Phisycal Therapy,West,schedule revisit in 2 days,Physical Therapy,West,False,True,False,False,False,False,85.0,False
+235,P069,N06,2024-02-23 09:18:00,2024-02-23 14:12:00.000000000,Physical Therapy,Nrth,Follow-up urgently required,Physical Therapy,North,True,True,False,False,False,False,294.0,False
+236,P017,N05,2024-01-05 22:20:00,2024-06-01 05:25:00.000000000,Wund Care,North,Lorem ipsum text $%^&,Wound Care,North,False,False,False,False,False,True,212105.0,True
+237,P049,N15,2024-01-21 02:25:00,2024-01-21 06:49:00.000000000,Physical Therapy,Weerst,Lorem ipsum text $%^&,Physical Therapy,West,False,False,False,False,False,True,264.0,False
+238,P094,N03,2024-03-15 20:42:00,2024-03-16 02:40:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,358.0,False
+239,P064,N09,2024-02-27 09:21:00,2024-02-18 00:55:54.324324325,Phisycal Therapy,East,Wound will be dressed soon,Physical Therapy,East,False,False,False,True,False,False,-13465.094594594584,True
+240,P059,N01,2024-01-28 05:28:00,2024-01-28 09:22:00.000000000,Wound Care,North,schedule revisit in 2 days,Wound Care,North,False,True,False,False,False,False,234.0,False
+241,P036,N03,2024-12-03 08:05:00,2024-03-12 11:16:00.000000000,Phisycal Therapy,Esst,Nil,Physical Therapy,East,False,False,False,False,True,False,-382849.0,True
+242,P055,N03,2024-04-03 00:13:00,2024-04-03 04:18:00.000000000,Check up,South,No notes provided,General Check-up,South,False,False,False,False,False,False,245.0,False
+243,P044,N04,2024-02-23 04:30:00,2024-02-23 05:07:00.000000000,Wund Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,37.0,False
+244,P039,N05,2024-02-25 04:41:00,2024-02-25 10:28:00.000000000,Phisycal Therapy,Nrth,No notes provided,Physical Therapy,North,False,False,False,False,False,False,347.0,False
+245,P045,N07,2024-03-24 04:58:00,2024-03-24 08:29:00.000000000,Medication Administration,West,No notes provided,Medication Administration,West,False,False,False,False,False,False,211.0,False
+246,P050,N12,2024-11-02 04:15:00,2024-11-02 06:37:00.000000000,Check up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,142.0,False
+247,P089,N01,2024-10-03 06:33:00,2024-03-10 11:44:00.000000000,Wund Care,North,urgent attention needed,Wound Care,North,True,False,False,False,False,False,-297769.0,True
+248,P031,N16,2024-02-04 07:31:00,2024-02-04 12:58:00.000000000,Check up,Esst,Wound will be dressed soon,General Check-up,East,False,False,False,True,False,False,327.0,False
+249,P054,N12,2024-03-22 05:48:00,2024-03-22 09:50:00.000000000,Check up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,242.0,False
+250,P051,N17,2024-02-21 22:32:00,2024-02-22 05:05:00.000000000,Med Admin,North,Nil,Medication Administration,North,False,False,False,False,True,False,393.0,False
+251,P036,N03,2024-03-02 16:58:00,2024-03-02 18:43:00.000000000,Phisycal Therapy,Weerst,Nil,Physical Therapy,West,False,False,False,False,True,False,105.0,False
+252,P083,N03,2024-02-23 13:46:00,2024-02-23 21:00:00.000000000,Wund Care,Esst,schedule revisit in 2 days,Wound Care,East,False,True,False,False,False,False,434.0,False
+253,P008,N10,2024-03-24 21:47:00,2024-03-24 23:17:00.000000000,Check up,Esst,Follow-up urgently required,General Check-up,East,True,True,False,False,False,False,90.0,False
+254,P067,N17,2024-03-09 05:23:00,2024-03-09 06:28:00.000000000,Physical Therapy,Nrth,No notes provided,Physical Therapy,North,False,False,False,False,False,False,65.0,False
+255,P092,N19,2024-03-03 15:29:00,2024-03-03 19:51:00.000000000,General Check-up,Esst,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,262.0,False
+256,P014,N19,2024-03-24 03:14:00,2024-03-24 09:34:00.000000000,Wound Care,Esst,Patient stable.,Wound Care,East,False,False,True,False,True,False,380.0,False
+257,P020,N06,2024-01-18 22:47:00,2024-01-19 04:23:00.000000000,Med Admin,West,Wound will be dressed soon,Medication Administration,West,False,False,False,True,False,False,336.0,False
+258,P010,N19,2024-04-02 16:43:00,2024-02-05 00:25:00.000000000,Wound Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,-83058.0,True
+259,P060,N10,2024-02-11 02:35:00,2024-11-02 06:29:00.000000000,Wound Care,Weerst,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,381834.0,True
+260,P032,N15,2024-02-19 15:49:00,2024-02-13 09:57:34.615384616,Wund Care,West,Follow-up urgently required,Wound Care,West,True,True,False,False,False,False,-8991.423076923067,True
+261,P082,N01,2024-01-02 21:24:00,2024-02-02 04:39:00.000000000,Physical Therapy,Nrth,schedule revisit in 2 days,Physical Therapy,North,False,True,False,False,False,False,43635.0,True
+262,P019,N09,2024-02-01 07:57:00,2024-01-02 15:10:00.000000000,Med Admin,Weerst,Lorem ipsum text $%^&,Medication Administration,West,False,False,False,False,False,True,-42767.0,True
+263,P082,N13,2024-01-19 18:03:00,2024-01-19 21:46:00.000000000,Phisycal Therapy,West,urgent attention needed,Physical Therapy,West,True,False,False,False,False,False,223.0,False
+264,P095,N11,2024-02-15 08:14:00,2024-02-15 08:53:00.000000000,Wund Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,39.0,False
+265,P053,N04,2024-03-12 06:28:00,2024-03-12 09:06:00.000000000,Medication Administration,Suth,No notes provided,Medication Administration,South,False,False,False,False,False,False,158.0,False
+266,P091,N20,2024-07-01 10:09:00,2024-01-07 10:56:00.000000000,Wund Care,Weerst,Nil,Wound Care,West,False,False,False,False,True,False,-253393.0,True
+267,P023,N01,2024-02-28 14:35:00,2024-02-28 20:59:00.000000000,Wund Care,Nrth,No notes provided,Wound Care,North,False,False,False,False,False,False,384.0,False
+268,P100,N08,2024-01-07 12:23:00,2024-01-07 18:15:00.000000000,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,352.0,False
+269,P017,N03,2024-02-04 01:29:00,2024-02-04 01:55:00.000000000,Phisycal Therapy,North,Nil,Physical Therapy,North,False,False,False,False,True,False,26.0,False
+270,P046,N07,2024-09-01 08:28:00,2024-01-09 16:01:00.000000000,Phisycal Therapy,Esst,schedule revisit in 2 days,Physical Therapy,East,False,True,False,False,False,False,-339387.0,True
+271,P062,N02,2024-01-09 12:08:00,2024-01-09 15:43:00.000000000,Wund Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,215.0,False
+272,P070,N16,2024-02-19 16:20:00,2024-02-19 19:39:00.000000000,Physical Therapy,South,Patient stable.,Physical Therapy,South,False,False,True,False,True,False,199.0,False
+273,P100,N09,2024-01-26 15:33:00,2024-01-26 18:37:00.000000000,Wund Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,184.0,False
+274,P095,N02,2024-01-19 12:22:00,2024-01-19 20:21:00.000000000,Phisycal Therapy,South,schedule revisit in 2 days,Physical Therapy,South,False,True,False,False,False,False,479.0,False
+275,P076,N01,2024-03-23 11:36:00,2024-03-23 16:25:00.000000000,Phisycal Therapy,West,No notes provided,Physical Therapy,West,False,False,False,False,False,False,289.0,False
+276,P008,N08,2024-03-08 00:33:00,2024-03-08 04:38:00.000000000,Wound Care,Weerst,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,245.0,False
+277,P042,N02,2024-01-05 18:45:00,2024-01-06 02:35:00.000000000,Phisycal Therapy,Nrth,No notes provided,Physical Therapy,North,False,False,False,False,False,False,470.0,False
+278,P051,N19,2024-11-01 09:20:00,2024-01-11 10:30:00.000000000,Phisycal Therapy,North,Lorem ipsum text $%^&,Physical Therapy,North,False,False,False,False,False,True,-424730.0,True
+279,P089,N20,2024-08-02 21:37:00,2024-09-02 04:35:00.000000000,Phisycal Therapy,North,urgent attention needed,Physical Therapy,North,True,False,False,False,False,False,43618.0,True
+280,P001,N19,2024-02-28 18:02:00,2024-02-28 19:36:00.000000000,General Check-up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,94.0,False
+281,P045,N11,2024-01-21 02:52:00,2024-01-21 08:55:00.000000000,General Check-up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,363.0,False
+282,P033,N04,2024-03-01 01:24:00,2024-03-01 05:09:00.000000000,Med Admin,South,Nil,Medication Administration,South,False,False,False,False,True,False,225.0,False
+283,P062,N19,2024-03-25 21:14:00,2024-03-25 22:38:00.000000000,Medication Administration,Nrth,Patient stable.,Medication Administration,North,False,False,True,False,True,False,84.0,False
+284,P010,N11,2024-01-13 05:46:00,2024-01-13 06:25:00.000000000,Check up,Weerst,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,39.0,False
+285,P078,N14,2024-02-01 03:21:00,2024-02-01 05:07:00.000000000,Wund Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,106.0,False
+286,P039,N08,2024-01-02 12:36:00,2024-01-02 17:18:00.000000000,Medication Administration,South,Patient stable.,Medication Administration,South,False,False,True,False,True,False,282.0,False
+287,P085,N20,2024-02-07 03:01:00,2024-02-07 04:47:00.000000000,Phisycal Therapy,Suth,No notes provided,Physical Therapy,South,False,False,False,False,False,False,106.0,False
+288,P063,N09,2024-01-21 17:24:00,2024-01-30 08:42:37.931034482,General Check-up,North,Wound will be dressed soon,General Check-up,North,False,False,False,True,False,False,12438.632183908032,True
+289,P034,N08,2024-02-19 01:09:00,2024-02-19 07:35:00.000000000,Check up,Nrth,Wound will be dressed soon,General Check-up,North,False,False,False,True,False,False,386.0,False
+290,P071,N02,2024-02-27 16:26:00,2024-02-27 21:01:00.000000000,Medication Administration,West,Lorem ipsum text $%^&,Medication Administration,West,False,False,False,False,False,True,275.0,False
+291,P005,N17,2024-03-17 18:43:00,2024-03-18 00:01:00.000000000,Phisycal Therapy,Nrth,Lorem ipsum text $%^&,Physical Therapy,North,False,False,False,False,False,True,318.0,False
+292,P017,N02,2024-03-02 21:27:00,2024-02-03 23:11:00.000000000,Phisycal Therapy,Suth,Wound will be dressed soon,Physical Therapy,South,False,False,False,True,False,False,-40216.0,True
+293,P071,N11,2024-02-17 14:58:00,2024-02-17 22:26:00.000000000,Wound Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,448.0,False
+294,P098,N04,2024-01-19 03:50:00,2024-01-19 06:17:00.000000000,General Check-up,North,urgent attention needed,General Check-up,North,True,False,False,False,False,False,147.0,False
+295,P005,N06,2024-02-13 04:39:00,2024-02-13 09:51:00.000000000,Med Admin,Esst,Nil,Medication Administration,East,False,False,False,False,True,False,312.0,False
+296,P035,N12,2024-01-11 09:19:00,2024-01-11 11:43:00.000000000,Medication Administration,Nrth,schedule revisit in 2 days,Medication Administration,North,False,True,False,False,False,False,144.0,False
+297,P042,N09,2024-03-14 19:41:00,2024-03-14 20:27:00.000000000,Wund Care,East,schedule revisit in 2 days,Wound Care,East,False,True,False,False,False,False,46.0,False
+298,P048,N02,2024-03-26 05:04:00,2024-03-26 07:44:00.000000000,Med Admin,South,No notes provided,Medication Administration,South,False,False,False,False,False,False,160.0,False
+299,P026,N02,2024-01-02 14:03:00,2024-01-02 21:54:00.000000000,General Check-up,West,urgent attention needed,General Check-up,West,True,False,False,False,False,False,471.0,False
+300,P016,N01,2024-01-12 15:38:00,2024-01-12 19:27:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,229.0,False
+301,P096,N03,2024-01-02 12:03:00,2024-02-01 13:27:00.000000000,Wund Care,West,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,43284.0,True
+302,P003,N01,2024-05-02 20:11:00,2024-02-06 01:19:00.000000000,Wound Care,West,urgent attention needed,Wound Care,West,True,False,False,False,False,False,-124972.0,True
+303,P036,N14,2024-02-28 11:29:00,2024-02-28 13:39:00.000000000,Wund Care,East,urgent attention needed,Wound Care,East,True,False,False,False,False,False,130.0,False
+304,P014,N01,2024-03-22 11:35:00,2024-03-22 17:07:00.000000000,Physical Therapy,Suth,No notes provided,Physical Therapy,South,False,False,False,False,False,False,332.0,False
+305,P042,N09,2024-02-21 22:57:00,2024-02-22 04:31:00.000000000,Physical Therapy,West,Follow-up urgently required,Physical Therapy,West,True,True,False,False,False,False,334.0,False
+306,P077,N13,2024-03-11 21:08:00,2024-03-12 03:18:00.000000000,Wound Care,East,urgent attention needed,Wound Care,East,True,False,False,False,False,False,370.0,False
+307,P075,N19,2024-01-11 23:45:00,2024-01-12 01:39:00.000000000,Medication Administration,Weerst,No notes provided,Medication Administration,West,False,False,False,False,False,False,114.0,False
+308,P024,N10,2024-01-16 04:47:00,2024-01-16 07:00:00.000000000,Phisycal Therapy,Weerst,No notes provided,Physical Therapy,West,False,False,False,False,False,False,133.0,False
+309,P054,N11,2024-09-02 18:18:00,2024-09-02 22:16:00.000000000,Check up,East,Patient stable.,General Check-up,East,False,False,True,False,True,False,238.0,False
+310,P061,N07,2024-03-04 21:24:00,2024-03-05 01:56:00.000000000,Physical Therapy,North,Patient stable.,Physical Therapy,North,False,False,True,False,True,False,272.0,False
+311,P073,N15,2024-11-01 22:11:00,2024-01-12 04:50:00.000000000,Check up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,-424401.0,True
+312,P058,N09,2024-01-25 05:36:00,2024-01-25 12:08:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,392.0,False
+313,P055,N16,2024-01-02 01:34:00,2024-01-10 16:52:37.931034482,General Check-up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,12438.632183908032,True
+314,P094,N08,2024-01-23 11:19:00,2024-01-23 12:26:00.000000000,Check up,North,No notes provided,General Check-up,North,False,False,False,False,False,False,67.0,False
+315,P039,N10,2024-02-24 16:38:00,2024-02-24 21:07:00.000000000,General Check-up,North,Follow-up urgently required,General Check-up,North,True,True,False,False,False,False,269.0,False
+316,P052,N01,2024-01-08 23:08:00,2024-09-01 00:57:00.000000000,Wound Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,339949.0,True
+317,P082,N09,2024-03-20 01:38:00,2024-03-20 02:03:00.000000000,Check up,Esst,Patient stable.,General Check-up,East,False,False,True,False,True,False,25.0,False
+318,P071,N09,2024-02-23 04:13:00,2024-02-23 10:09:00.000000000,Wound Care,Suth,Nil,Wound Care,South,False,False,False,False,True,False,356.0,False
+319,P078,N05,2024-02-27 03:32:00,2024-02-27 09:41:00.000000000,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,369.0,False
+320,P034,N17,2024-01-12 22:26:00,2024-01-13 00:58:00.000000000,Phisycal Therapy,Esst,No notes provided,Physical Therapy,East,False,False,False,False,False,False,152.0,False
+321,P031,N01,2024-01-22 02:58:00,2024-01-22 03:55:00.000000000,Medication Administration,South,No notes provided,Medication Administration,South,False,False,False,False,False,False,57.0,False
+322,P033,N08,2024-02-10 08:29:00,2024-02-10 08:55:00.000000000,Check up,South,Patient stable.,General Check-up,South,False,False,True,False,True,False,26.0,False
+323,P095,N04,2024-01-28 01:00:00,2024-01-28 08:17:00.000000000,Phisycal Therapy,South,Wound will be dressed soon,Physical Therapy,South,False,False,False,True,False,False,437.0,False
+324,P094,N03,2024-02-27 10:11:00,2024-02-27 11:10:00.000000000,Med Admin,North,Lorem ipsum text $%^&,Medication Administration,North,False,False,False,False,False,True,59.0,False
+325,P054,N06,2024-05-01 22:46:00,2024-01-05 23:17:00.000000000,Phisycal Therapy,Nrth,Nil,Physical Therapy,North,False,False,False,False,True,False,-168449.0,True
+326,P024,N20,2024-02-25 11:39:00,2024-02-25 11:54:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,15.0,False
+327,P084,N11,2024-01-23 21:33:00,2024-01-24 04:06:00.000000000,Wund Care,Weerst,No notes provided,Wound Care,West,False,False,False,False,False,False,393.0,False
+328,P085,N08,2024-12-02 21:43:00,2024-12-06 03:34:28.656716417,Med Admin,South,No notes provided,Medication Administration,South,False,False,False,False,False,False,4671.477611940283,True
+329,P065,N16,2024-02-28 05:04:00,2024-02-28 11:29:00.000000000,Medication Administration,Weerst,schedule revisit in 2 days,Medication Administration,West,False,True,False,False,False,False,385.0,False
+330,P083,N13,2024-02-27 07:05:00,2024-02-27 11:01:00.000000000,Medication Administration,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,236.0,False
+331,P096,N01,2024-01-13 13:02:00,2024-01-13 17:48:00.000000000,Wound Care,Nrth,urgent attention needed,Wound Care,North,True,False,False,False,False,False,286.0,False
+332,P044,N12,2024-01-27 07:54:00,2024-01-27 11:47:00.000000000,General Check-up,East,Wound will be dressed soon,General Check-up,East,False,False,False,True,False,False,233.0,False
+333,P029,N01,2024-02-12 20:51:00,2024-02-12 23:21:00.000000000,General Check-up,Nrth,Patient stable.,General Check-up,North,False,False,True,False,True,False,150.0,False
+334,P093,N14,2024-01-09 19:12:00,2024-01-09 20:49:00.000000000,Check up,North,schedule revisit in 2 days,General Check-up,North,False,True,False,False,False,False,97.0,False
+335,P054,N02,2024-03-27 21:37:00,2024-03-29 10:49:11.428571428,Medication Administration,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,2232.1904761904666,True
+336,P071,N14,2024-03-16 16:49:00,2024-03-17 00:41:00.000000000,Phisycal Therapy,South,Follow-up urgently required,Physical Therapy,South,True,True,False,False,False,False,472.0,False
+337,P042,N17,2024-02-14 19:58:00,2024-02-15 01:53:00.000000000,Wund Care,Suth,Nil,Wound Care,South,False,False,False,False,True,False,355.0,False
+338,P053,N20,2024-03-24 16:19:00,2024-03-24 23:31:00.000000000,General Check-up,West,schedule revisit in 2 days,General Check-up,West,False,True,False,False,False,False,432.0,False
+339,P087,N05,2024-03-21 05:32:00,2024-03-21 10:10:00.000000000,General Check-up,Nrth,Wound will be dressed soon,General Check-up,North,False,False,False,True,False,False,278.0,False
+340,P091,N14,2024-03-24 17:18:00,2024-03-25 00:48:00.000000000,Med Admin,Esst,No notes provided,Medication Administration,East,False,False,False,False,False,False,450.0,False
+341,P008,N07,2024-02-25 05:18:00,2024-02-25 11:08:00.000000000,Physical Therapy,South,Patient stable.,Physical Therapy,South,False,False,True,False,True,False,350.0,False
+342,P046,N15,2024-01-20 21:47:00,2024-01-21 02:35:00.000000000,Wund Care,North,schedule revisit in 2 days,Wound Care,North,False,True,False,False,False,False,288.0,False
+343,P049,N13,2024-02-26 21:20:00,2024-02-27 02:03:00.000000000,Wound Care,Esst,urgent attention needed,Wound Care,East,True,False,False,False,False,False,283.0,False
+344,P057,N08,2024-03-23 22:41:00,2024-03-24 01:50:00.000000000,Wund Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,189.0,False
+345,P023,N17,2024-01-13 01:27:00,2024-01-25 16:12:30.508474576,Physical Therapy,South,Follow-up urgently required,Physical Therapy,South,True,True,False,False,False,False,18165.50847457627,True
+346,P020,N02,2024-01-11 19:03:00,2024-01-12 01:40:00.000000000,Physical Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,397.0,False
+347,P029,N06,2024-03-03 16:10:00,2024-03-03 19:43:00.000000000,Med Admin,Nrth,Wound will be dressed soon,Medication Administration,North,False,False,False,True,False,False,213.0,False
+348,P038,N07,2024-03-17 15:35:00,2024-03-17 22:37:00.000000000,Wound Care,Nrth,Wound will be dressed soon,Wound Care,North,False,False,False,True,False,False,422.0,False
+349,P080,N08,2024-01-22 10:24:00,2024-01-22 18:13:00.000000000,Check up,North,urgent attention needed,General Check-up,North,True,False,False,False,False,False,469.0,False
+350,P099,N12,2024-03-26 16:28:00,2024-03-26 20:38:00.000000000,Wound Care,Suth,No notes provided,Wound Care,South,False,False,False,False,False,False,250.0,False
+351,P099,N18,2024-03-01 20:04:00,2024-01-03 21:52:00.000000000,Wund Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,-83412.0,True
+352,P095,N14,2024-03-27 02:47:00,2024-03-17 18:21:54.324324325,Phisycal Therapy,Esst,No notes provided,Physical Therapy,East,False,False,False,False,False,False,-13465.094594594584,True
+353,P023,N09,2024-03-03 18:52:00,2024-03-03 20:49:00.000000000,Physical Therapy,North,Nil,Physical Therapy,North,False,False,False,False,True,False,117.0,False
+354,P050,N04,2024-03-01 20:46:00,2024-02-03 02:03:00.000000000,Check up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,-40003.0,True
+355,P039,N20,2024-10-01 14:24:00,2024-01-10 17:47:00.000000000,Wound Care,East,Follow-up urgently required,Wound Care,East,True,True,False,False,False,False,-381397.0,True
+356,P070,N10,2024-05-03 09:43:00,2024-03-05 17:18:00.000000000,General Check-up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,-84505.0,True
+357,P077,N13,2024-03-18 02:19:00,2024-03-18 04:07:00.000000000,General Check-up,West,Nil,General Check-up,West,False,False,False,False,True,False,108.0,False
+358,P079,N09,2024-01-04 05:42:00,2024-01-04 12:32:00.000000000,Wound Care,East,No notes provided,Wound Care,East,False,False,False,False,False,False,410.0,False
+359,P026,N19,2024-11-02 11:08:00,2024-02-11 16:52:00.000000000,Wund Care,Nrth,urgent attention needed,Wound Care,North,True,False,False,False,False,False,-381256.0,True
+360,P058,N11,2024-03-22 09:44:00,2024-03-13 01:18:54.324324325,Phisycal Therapy,Weerst,Wound will be dressed soon,Physical Therapy,West,False,False,False,True,False,False,-13465.094594594584,True
+361,P029,N14,2024-02-27 11:08:00,2024-02-27 16:56:00.000000000,General Check-up,East,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,348.0,False
+362,P014,N06,2024-03-20 02:53:00,2024-03-20 05:17:00.000000000,Phisycal Therapy,West,No notes provided,Physical Therapy,West,False,False,False,False,False,False,144.0,False
+363,P003,N17,2024-03-01 18:37:00,2024-01-03 22:05:00.000000000,Wund Care,Esst,No notes provided,Wound Care,East,False,False,False,False,False,False,-83312.0,True
+364,P084,N05,2024-02-13 07:57:00,2024-02-13 14:33:00.000000000,Physical Therapy,South,Lorem ipsum text $%^&,Physical Therapy,South,False,False,False,False,False,True,396.0,False
+365,P002,N08,2024-03-22 05:48:00,2024-03-22 10:12:00.000000000,Phisycal Therapy,East,Follow-up urgently required,Physical Therapy,East,True,True,False,False,False,False,264.0,False
+366,P019,N16,2024-02-02 07:48:00,2024-01-27 01:56:34.615384616,Wund Care,Nrth,urgent attention needed,Wound Care,North,True,False,False,False,False,False,-8991.423076923067,True
+367,P047,N13,2024-02-15 01:02:00,2024-02-15 06:35:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,333.0,False
+368,P070,N19,2024-01-13 20:24:00,2024-01-13 23:32:00.000000000,Check up,Suth,Nil,General Check-up,South,False,False,False,False,True,False,188.0,False
+369,P045,N16,2024-02-20 00:32:00,2024-02-20 08:04:00.000000000,Phisycal Therapy,East,Follow-up urgently required,Physical Therapy,East,True,True,False,False,False,False,452.0,False
+370,P020,N06,2024-01-12 19:45:00,2024-01-13 02:44:00.000000000,Check up,West,Nil,General Check-up,West,False,False,False,False,True,False,419.0,False
+371,P062,N07,2024-03-06 20:53:00,2024-07-03 00:24:00.000000000,Wound Care,West,Patient stable.,Wound Care,West,False,False,True,False,True,False,170131.0,True
+372,P066,N02,2024-05-03 01:10:00,2024-05-03 03:23:00.000000000,Phisycal Therapy,North,Patient stable.,Physical Therapy,North,False,False,True,False,True,False,133.0,False
+373,P011,N07,2024-02-20 15:55:00,2024-02-20 20:02:00.000000000,Phisycal Therapy,West,Nil,Physical Therapy,West,False,False,False,False,True,False,247.0,False
+374,P024,N20,2024-03-17 08:10:00,2024-03-17 14:21:00.000000000,General Check-up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,371.0,False
+375,P026,N17,2024-03-22 13:52:00,2024-03-22 18:24:12.151898734,Check up,South,Lorem ipsum text $%^&,General Check-up,South,False,False,False,False,False,True,272.2025316455667,False
+376,P065,N04,2024-01-16 21:08:00,2024-01-17 04:50:00.000000000,Wound Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,462.0,False
+377,P055,N08,2024-02-26 12:22:00,2024-02-26 17:24:00.000000000,Check up,North,Follow-up urgently required,General Check-up,North,True,True,False,False,False,False,302.0,False
+378,P011,N10,2024-03-18 13:16:00,2024-04-02 07:22:18.591549295,Wound Care,Esst,No notes provided,Wound Care,East,False,False,False,False,False,False,21246.309859154917,True
+379,P089,N11,2024-02-12 03:09:00,2024-12-02 06:48:00.000000000,Physical Therapy,Suth,No notes provided,Physical Therapy,South,False,False,False,False,False,False,423579.0,True
+380,P088,N13,2024-01-14 17:50:00,2024-01-14 22:36:00.000000000,Medication Administration,South,Wound will be dressed soon,Medication Administration,South,False,False,False,True,False,False,286.0,False
+381,P074,N12,2024-03-13 23:08:00,2024-03-14 06:26:00.000000000,Check up,West,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,438.0,False
+382,P044,N18,2024-03-23 21:45:00,2024-03-23 22:12:00.000000000,Phisycal Therapy,North,Patient stable.,Physical Therapy,North,False,False,True,False,True,False,27.0,False
+383,P012,N03,2024-08-02 11:05:00,2024-08-02 16:17:00.000000000,Wound Care,North,Nil,Wound Care,North,False,False,False,False,True,False,312.0,False
+384,P077,N02,2024-01-21 15:28:00,2024-01-21 15:34:00.000000000,Wund Care,Suth,schedule revisit in 2 days,Wound Care,South,False,True,False,False,False,False,6.0,False
+385,P079,N06,2024-03-02 11:15:00,2024-03-02 16:51:00.000000000,Wound Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,336.0,False
+386,P076,N07,2024-01-03 23:45:00,2024-03-02 00:21:00.000000000,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,83556.0,True
+387,P029,N20,2024-01-15 12:36:00,2024-01-15 12:39:00.000000000,Physical Therapy,South,Nil,Physical Therapy,South,False,False,False,False,True,False,3.0,False
+388,P044,N04,2024-09-03 17:52:00,2024-03-10 00:39:00.000000000,Physical Therapy,East,Nil,Physical Therapy,East,False,False,False,False,True,False,-255913.0,True
+389,P100,N15,2024-03-15 18:55:00,2024-03-15 19:10:00.000000000,Medication Administration,Nrth,urgent attention needed,Medication Administration,North,True,False,False,False,False,False,15.0,False
+390,P087,N08,2024-02-14 11:33:00,2024-02-14 16:08:00.000000000,Wound Care,Suth,schedule revisit in 2 days,Wound Care,South,False,True,False,False,False,False,275.0,False
+391,P044,N03,2024-06-03 15:20:00,2024-06-03 18:22:00.000000000,Wund Care,Suth,Follow-up urgently required,Wound Care,South,True,True,False,False,False,False,182.0,False
+392,P095,N07,2024-01-24 07:55:00,2024-01-24 10:11:00.000000000,Wund Care,West,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,136.0,False
+393,P016,N03,2024-03-22 15:39:00,2024-03-22 15:43:00.000000000,Wound Care,East,Wound will be dressed soon,Wound Care,East,False,False,False,True,False,False,4.0,False
+394,P074,N09,2024-06-02 16:17:00,2024-02-06 19:41:00.000000000,Wund Care,South,Patient stable.,Wound Care,South,False,False,True,False,True,False,-168276.0,True
+395,P065,N12,2024-02-28 21:49:00,2024-02-28 23:19:00.000000000,Medication Administration,Nrth,No notes provided,Medication Administration,North,False,False,False,False,False,False,90.0,False
+396,P027,N13,2024-03-04 10:23:00,2024-03-04 15:37:00.000000000,Physical Therapy,South,No notes provided,Physical Therapy,South,False,False,False,False,False,False,314.0,False
+397,P044,N12,2024-01-16 13:13:00,2024-01-16 16:48:00.000000000,General Check-up,Weerst,Nil,General Check-up,West,False,False,False,False,True,False,215.0,False
+398,P074,N08,2024-01-24 08:51:00,2024-01-24 10:52:00.000000000,Med Admin,North,schedule revisit in 2 days,Medication Administration,North,False,True,False,False,False,False,121.0,False
+399,P023,N14,2024-02-05 20:33:00,2024-06-02 01:07:00.000000000,General Check-up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,168754.0,True
+400,P013,N06,2024-01-07 08:30:00,2024-01-07 15:40:00.000000000,Check up,East,Wound will be dressed soon,General Check-up,East,False,False,False,True,False,False,430.0,False
+401,P033,N12,2024-01-14 03:22:00,2024-01-14 10:47:00.000000000,Wund Care,South,urgent attention needed,Wound Care,South,True,False,False,False,False,False,445.0,False
+402,P095,N15,2024-01-13 19:18:00,2024-01-13 23:16:00.000000000,Phisycal Therapy,South,Wound will be dressed soon,Physical Therapy,South,False,False,False,True,False,False,238.0,False
+403,P010,N03,2024-01-11 07:20:00,2024-01-11 10:03:00.000000000,Physical Therapy,Suth,Nil,Physical Therapy,South,False,False,False,False,True,False,163.0,False
+404,P096,N19,2024-03-15 13:10:00,2024-03-15 14:45:00.000000000,Wound Care,South,schedule revisit in 2 days,Wound Care,South,False,True,False,False,False,False,95.0,False
+405,P011,N07,2024-01-13 03:06:00,2024-01-13 03:39:00.000000000,Medication Administration,Esst,No notes provided,Medication Administration,East,False,False,False,False,False,False,33.0,False
+406,P034,N20,2024-01-03 20:59:00,2024-04-01 04:33:00.000000000,Med Admin,Suth,schedule revisit in 2 days,Medication Administration,South,False,True,False,False,False,False,127174.0,True
+407,P017,N17,2024-01-01 01:42:00,2024-01-01 04:45:00.000000000,General Check-up,East,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,183.0,False
+408,P090,N18,2024-01-19 19:29:00,2024-01-20 00:53:00.000000000,Med Admin,Suth,No notes provided,Medication Administration,South,False,False,False,False,False,False,324.0,False
+409,P040,N12,2024-02-09 04:19:00,2024-02-09 04:25:00.000000000,Wound Care,South,Wound will be dressed soon,Wound Care,South,False,False,False,True,False,False,6.0,False
+410,P063,N16,2024-02-01 13:51:00,2024-02-01 16:21:00.000000000,Wund Care,Esst,No notes provided,Wound Care,East,False,False,False,False,False,False,150.0,False
+411,P051,N08,2024-01-23 23:41:00,2024-01-24 03:01:00.000000000,Med Admin,West,urgent attention needed,Medication Administration,West,True,False,False,False,False,False,200.0,False
+412,P079,N09,2024-02-21 23:34:00,2024-02-22 06:29:00.000000000,Physical Therapy,North,schedule revisit in 2 days,Physical Therapy,North,False,True,False,False,False,False,415.0,False
+413,P059,N20,2024-02-09 22:39:00,2024-02-10 02:51:00.000000000,Wund Care,Weerst,No notes provided,Wound Care,West,False,False,False,False,False,False,252.0,False
+414,P014,N10,2024-02-05 22:28:00,2024-02-06 04:41:00.000000000,Wound Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,373.0,False
+415,P040,N16,2024-02-15 22:50:00,2024-02-15 23:07:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,17.0,False
+416,P061,N06,2024-01-27 08:52:00,2024-01-27 12:08:00.000000000,Wound Care,Nrth,schedule revisit in 2 days,Wound Care,North,False,True,False,False,False,False,196.0,False
+417,P026,N15,2024-03-25 03:33:00,2024-03-25 09:14:00.000000000,Wund Care,East,Nil,Wound Care,East,False,False,False,False,True,False,341.0,False
+418,P094,N02,2024-03-18 16:07:00,2024-03-18 18:17:00.000000000,Medication Administration,Suth,schedule revisit in 2 days,Medication Administration,South,False,True,False,False,False,False,130.0,False
+419,P015,N08,2024-03-14 10:00:00,2024-03-14 11:26:00.000000000,Physical Therapy,Nrth,Nil,Physical Therapy,North,False,False,False,False,True,False,86.0,False
+420,P089,N16,2024-03-20 04:23:00,2024-03-20 10:58:00.000000000,Check up,West,Follow-up urgently required,General Check-up,West,True,True,False,False,False,False,395.0,False
+421,P098,N02,2024-01-12 20:09:00,2024-01-13 02:09:00.000000000,Check up,South,Lorem ipsum text $%^&,General Check-up,South,False,False,False,False,False,True,360.0,False
+422,P097,N12,2024-02-24 06:01:00,2024-02-24 11:54:00.000000000,Med Admin,Weerst,Follow-up urgently required,Medication Administration,West,True,True,False,False,False,False,353.0,False
+423,P038,N18,2024-03-16 06:36:00,2024-03-16 08:12:00.000000000,General Check-up,Weerst,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,96.0,False
+424,P009,N17,2024-01-15 09:52:00,2024-01-15 12:07:00.000000000,General Check-up,East,Patient stable.,General Check-up,East,False,False,True,False,True,False,135.0,False
+425,P003,N20,2024-02-25 19:15:00,2024-02-25 22:00:00.000000000,Check up,North,schedule revisit in 2 days,General Check-up,North,False,True,False,False,False,False,165.0,False
+426,P079,N10,2024-02-14 20:20:00,2024-02-14 21:17:00.000000000,Check up,Nrth,Patient stable.,General Check-up,North,False,False,True,False,True,False,57.0,False
+427,P063,N07,2024-02-01 18:41:00,2024-03-01 01:50:00.000000000,Med Admin,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,40749.0,True
+428,P029,N20,2024-03-03 00:59:00,2024-03-03 08:51:00.000000000,Wund Care,East,No notes provided,Wound Care,East,False,False,False,False,False,False,472.0,False
+429,P054,N12,2024-03-02 19:17:00,2024-03-02 23:48:00.000000000,Wound Care,Nrth,No notes provided,Wound Care,North,False,False,False,False,False,False,271.0,False
+430,P093,N08,2024-03-13 06:12:00,2024-03-13 10:42:00.000000000,Wund Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,270.0,False
+431,P082,N19,2024-02-22 14:44:00,2024-02-22 20:25:00.000000000,Med Admin,Nrth,Follow-up urgently required,Medication Administration,North,True,True,False,False,False,False,341.0,False
+432,P021,N18,2024-03-15 11:57:00,2024-03-15 14:39:00.000000000,General Check-up,Weerst,Nil,General Check-up,West,False,False,False,False,True,False,162.0,False
+433,P031,N19,2024-03-07 12:49:00,2024-03-20 03:34:30.508474576,Physical Therapy,Weerst,No notes provided,Physical Therapy,West,False,False,False,False,False,False,18165.50847457627,True
+434,P037,N20,2024-01-17 04:56:00,2024-01-31 23:02:18.591549295,Wound Care,Suth,schedule revisit in 2 days,Wound Care,South,False,True,False,False,False,False,21246.309859154917,True
+435,P089,N09,2024-03-17 17:36:00,2024-03-18 01:31:00.000000000,Phisycal Therapy,Nrth,Patient stable.,Physical Therapy,North,False,False,True,False,True,False,475.0,False
+436,P075,N08,2024-09-01 09:05:00,2024-01-09 13:58:00.000000000,Med Admin,West,No notes provided,Medication Administration,West,False,False,False,False,False,False,-339547.0,True
+437,P089,N19,2024-01-20 20:19:00,2024-01-20 20:39:00.000000000,Med Admin,Nrth,Patient stable.,Medication Administration,North,False,False,True,False,True,False,20.0,False
+438,P016,N08,2024-03-21 19:59:00,2024-03-21 20:05:00.000000000,Med Admin,Esst,urgent attention needed,Medication Administration,East,True,False,False,False,False,False,6.0,False
+439,P042,N17,2024-03-08 04:03:00,2024-03-08 09:48:00.000000000,Med Admin,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,345.0,False
+440,P019,N05,2024-02-03 15:36:00,2024-02-03 21:58:00.000000000,Wound Care,North,urgent attention needed,Wound Care,North,True,False,False,False,False,False,382.0,False
+441,P017,N05,2024-02-18 06:31:00,2024-02-18 09:54:00.000000000,Wund Care,West,schedule revisit in 2 days,Wound Care,West,False,True,False,False,False,False,203.0,False
+442,P074,N03,2024-01-22 13:27:00,2024-01-22 16:35:00.000000000,General Check-up,West,Wound will be dressed soon,General Check-up,West,False,False,False,True,False,False,188.0,False
+443,P022,N12,2024-03-27 14:39:00,2024-03-27 15:54:00.000000000,Medication Administration,Esst,schedule revisit in 2 days,Medication Administration,East,False,True,False,False,False,False,75.0,False
+444,P011,N04,2024-03-02 07:39:00,2024-02-03 15:34:00.000000000,Phisycal Therapy,Suth,Patient stable.,Physical Therapy,South,False,False,True,False,True,False,-39845.0,True
+445,P061,N01,2024-02-07 23:34:00,2024-08-02 01:23:00.000000000,Wund Care,Suth,No notes provided,Wound Care,South,False,False,False,False,False,False,253549.0,True
+446,P090,N01,2024-02-19 21:33:00,2024-02-19 21:56:00.000000000,Physical Therapy,South,Patient stable.,Physical Therapy,South,False,False,True,False,True,False,23.0,False
+447,P007,N15,2024-03-01 02:24:00,2024-03-01 08:03:00.000000000,Physical Therapy,Weerst,No notes provided,Physical Therapy,West,False,False,False,False,False,False,339.0,False
+448,P030,N13,2024-03-23 03:57:00,2024-03-23 06:39:00.000000000,Medication Administration,Nrth,Follow-up urgently required,Medication Administration,North,True,True,False,False,False,False,162.0,False
+449,P092,N01,2024-01-08 16:19:00,2024-01-08 19:10:00.000000000,Medication Administration,North,Follow-up urgently required,Medication Administration,North,True,True,False,False,False,False,171.0,False
+450,P039,N08,2024-03-09 01:40:00,2024-03-09 03:52:00.000000000,Med Admin,Esst,No notes provided,Medication Administration,East,False,False,False,False,False,False,132.0,False
+451,P085,N05,2024-01-24 12:33:00,2024-01-24 18:21:00.000000000,Wund Care,North,schedule revisit in 2 days,Wound Care,North,False,True,False,False,False,False,348.0,False
+452,P078,N11,2024-02-18 04:13:00,2024-02-18 09:48:00.000000000,Phisycal Therapy,West,Follow-up urgently required,Physical Therapy,West,True,True,False,False,False,False,335.0,False
+453,P018,N14,2024-01-21 18:58:00,2024-01-21 20:19:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,81.0,False
+454,P019,N01,2024-02-14 13:19:00,2024-02-14 17:06:00.000000000,Physical Therapy,South,schedule revisit in 2 days,Physical Therapy,South,False,True,False,False,False,False,227.0,False
+455,P079,N20,2024-02-20 18:39:00,2024-02-20 20:38:00.000000000,Wund Care,West,Patient stable.,Wound Care,West,False,False,True,False,True,False,119.0,False
+456,P065,N20,2024-02-23 20:23:00,2024-02-23 21:58:00.000000000,Med Admin,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,95.0,False
+457,P098,N01,2024-02-14 07:47:00,2024-02-14 13:31:00.000000000,Wund Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,344.0,False
+458,P042,N15,2024-01-14 12:49:00,2024-01-14 13:11:00.000000000,Med Admin,Weerst,Nil,Medication Administration,West,False,False,False,False,True,False,22.0,False
+459,P083,N02,2024-04-03 14:29:00,2024-03-04 21:33:00.000000000,Wound Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,-42776.0,True
+460,P050,N17,2024-03-02 06:18:00,2024-03-02 10:04:00.000000000,Med Admin,Suth,urgent attention needed,Medication Administration,South,True,False,False,False,False,False,226.0,False
+461,P007,N17,2024-01-15 20:28:00,2024-01-15 21:15:00.000000000,Check up,South,No notes provided,General Check-up,South,False,False,False,False,False,False,47.0,False
+462,P023,N15,2024-03-23 06:56:00,2024-03-23 10:49:00.000000000,Check up,Suth,Wound will be dressed soon,General Check-up,South,False,False,False,True,False,False,233.0,False
+463,P092,N04,2024-04-01 22:28:00,2024-01-05 03:53:00.000000000,General Check-up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,-126395.0,True
+464,P079,N06,2024-02-18 12:02:00,2024-02-18 18:36:00.000000000,Phisycal Therapy,Weerst,Follow-up urgently required,Physical Therapy,West,True,True,False,False,False,False,394.0,False
+465,P054,N10,2024-02-24 14:18:00,2024-02-24 19:39:00.000000000,Phisycal Therapy,Nrth,Follow-up urgently required,Physical Therapy,North,True,True,False,False,False,False,321.0,False
+466,P059,N16,2024-02-18 00:38:00,2024-02-18 08:10:00.000000000,Medication Administration,West,schedule revisit in 2 days,Medication Administration,West,False,True,False,False,False,False,452.0,False
+467,P011,N20,2024-03-01 07:56:00,2024-03-01 12:37:00.000000000,Physical Therapy,West,Patient stable.,Physical Therapy,West,False,False,True,False,True,False,281.0,False
+468,P019,N02,2024-03-19 19:19:00,2024-03-19 22:09:00.000000000,Check up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,170.0,False
+469,P085,N20,2024-03-26 17:11:00,2024-03-26 21:05:00.000000000,General Check-up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,234.0,False
+470,P009,N14,2024-03-03 09:30:00,2024-03-03 10:39:00.000000000,Check up,Suth,Wound will be dressed soon,General Check-up,South,False,False,False,True,False,False,69.0,False
+471,P079,N02,2024-01-19 23:40:00,2024-01-20 04:11:00.000000000,Check up,East,urgent attention needed,General Check-up,East,True,False,False,False,False,False,271.0,False
+472,P074,N20,2024-05-02 19:36:00,2024-02-05 23:51:00.000000000,Medication Administration,East,Follow-up urgently required,Medication Administration,East,True,True,False,False,False,False,-125025.0,True
+473,P001,N04,2024-01-15 20:50:00,2024-01-15 21:51:00.000000000,Wund Care,North,Nil,Wound Care,North,False,False,False,False,True,False,61.0,False
+474,P028,N01,2024-07-03 22:18:00,2024-08-03 00:29:00.000000000,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,43331.0,True
+475,P088,N11,2024-02-13 23:36:00,2024-02-14 04:52:00.000000000,Wound Care,South,schedule revisit in 2 days,Wound Care,South,False,True,False,False,False,False,316.0,False
+476,P061,N02,2024-03-05 15:09:00,2024-05-03 20:31:00.000000000,Medication Administration,Weerst,Lorem ipsum text $%^&,Medication Administration,West,False,False,False,False,False,True,85282.0,True
+477,P073,N11,2024-03-18 00:13:00,2024-03-18 05:09:00.000000000,General Check-up,Weerst,No notes provided,General Check-up,West,False,False,False,False,False,False,296.0,False
+478,P049,N18,2024-01-19 19:24:00,2024-01-19 21:00:00.000000000,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,96.0,False
+479,P031,N12,2024-02-27 09:13:00,2024-02-27 13:42:00.000000000,Physical Therapy,South,No notes provided,Physical Therapy,South,False,False,False,False,False,False,269.0,False
+480,P057,N17,2024-01-26 15:57:00,2024-01-26 20:14:00.000000000,Phisycal Therapy,West,Wound will be dressed soon,Physical Therapy,West,False,False,False,True,False,False,257.0,False
+481,P042,N05,2024-01-27 16:43:00,2024-01-27 17:51:00.000000000,Wund Care,Esst,Lorem ipsum text $%^&,Wound Care,East,False,False,False,False,False,True,68.0,False
+482,P040,N02,2024-03-28 19:55:00,2024-03-28 20:40:00.000000000,General Check-up,East,Patient stable.,General Check-up,East,False,False,True,False,True,False,45.0,False
+483,P003,N19,2024-02-21 06:20:00,2024-02-21 08:03:00.000000000,Wund Care,Suth,urgent attention needed,Wound Care,South,True,False,False,False,False,False,103.0,False
+484,P035,N05,2024-01-09 03:00:00,2024-09-01 08:19:00.000000000,Check up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,340159.0,True
+485,P091,N10,2024-03-08 05:04:00,2024-03-08 07:44:00.000000000,General Check-up,East,Patient stable.,General Check-up,East,False,False,True,False,True,False,160.0,False
+486,P014,N13,2024-01-03 13:25:00,2024-01-03 14:57:00.000000000,Medication Administration,Weerst,urgent attention needed,Medication Administration,West,True,False,False,False,False,False,92.0,False
+487,P069,N03,2024-02-19 04:05:00,2024-02-19 11:02:00.000000000,Medication Administration,Nrth,Lorem ipsum text $%^&,Medication Administration,North,False,False,False,False,False,True,417.0,False
+488,P061,N08,2024-05-01 19:16:00,2024-06-01 03:04:00.000000000,General Check-up,North,Follow-up urgently required,General Check-up,North,True,True,False,False,False,False,43668.0,True
+489,P042,N15,2024-02-01 02:30:00,2024-02-01 03:28:00.000000000,General Check-up,East,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,58.0,False
+490,P017,N17,2024-01-13 22:50:00,2024-01-13 23:45:00.000000000,General Check-up,Nrth,urgent attention needed,General Check-up,North,True,False,False,False,False,False,55.0,False
+491,P080,N08,2024-03-06 15:24:00,2024-06-03 15:58:00.000000000,General Check-up,West,Nil,General Check-up,West,False,False,False,False,True,False,128194.0,True
+492,P031,N06,2024-03-22 02:47:00,2024-03-22 10:44:00.000000000,Medication Administration,Nrth,Lorem ipsum text $%^&,Medication Administration,North,False,False,False,False,False,True,477.0,False
+493,P040,N13,2024-01-20 03:43:00,2024-01-20 10:40:00.000000000,Med Admin,Weerst,Lorem ipsum text $%^&,Medication Administration,West,False,False,False,False,False,True,417.0,False
+494,P018,N19,2024-03-26 00:48:00,2024-03-26 02:04:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,76.0,False
+495,P027,N11,2024-02-19 21:19:00,2024-02-20 05:10:00.000000000,Med Admin,Weerst,No notes provided,Medication Administration,West,False,False,False,False,False,False,471.0,False
+496,P017,N10,2024-01-12 17:03:00,2024-01-12 17:04:00.000000000,General Check-up,Nrth,urgent attention needed,General Check-up,North,True,False,False,False,False,False,1.0,False
+497,P081,N11,2024-03-13 12:24:00,2024-03-13 16:07:00.000000000,Wund Care,South,Lorem ipsum text $%^&,Wound Care,South,False,False,False,False,False,True,223.0,False
+498,P047,N14,2024-01-10 21:08:00,2024-10-01 22:17:00.000000000,Wound Care,Nrth,Patient stable.,Wound Care,North,False,False,True,False,True,False,381669.0,True
+499,P018,N03,2024-01-21 13:55:00,2024-01-21 17:49:00.000000000,Med Admin,South,Lorem ipsum text $%^&,Medication Administration,South,False,False,False,False,False,True,234.0,False
+500,P046,N08,2024-01-14 19:00:00,2024-01-14 23:56:00.000000000,Medication Administration,West,No notes provided,Medication Administration,West,False,False,False,False,False,False,296.0,False
+501,P005,N02,2024-03-16 22:23:00,2024-03-16 23:21:00.000000000,Medication Administration,Nrth,Follow-up urgently required,Medication Administration,North,True,True,False,False,False,False,58.0,False
+502,P097,N09,2024-02-17 02:33:00,2024-02-17 10:09:00.000000000,Check up,West,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,456.0,False
+503,P088,N18,2024-03-10 19:03:00,2024-11-03 02:46:00.000000000,General Check-up,Esst,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,341743.0,True
+504,P043,N14,2024-02-26 09:18:00,2024-02-26 10:44:00.000000000,Wound Care,Suth,urgent attention needed,Wound Care,South,True,False,False,False,False,False,86.0,False
+505,P007,N10,2024-03-20 00:18:00,2024-03-20 04:27:00.000000000,Check up,South,No notes provided,General Check-up,South,False,False,False,False,False,False,249.0,False
+506,P036,N09,2024-01-24 03:38:00,2024-01-24 05:08:00.000000000,Phisycal Therapy,East,Wound will be dressed soon,Physical Therapy,East,False,False,False,True,False,False,90.0,False
+507,P024,N17,2024-01-11 02:09:00,2024-01-11 07:14:00.000000000,Phisycal Therapy,East,Nil,Physical Therapy,East,False,False,False,False,True,False,305.0,False
+508,P022,N07,2024-03-24 11:03:00,2024-03-24 16:32:00.000000000,Physical Therapy,Nrth,Patient stable.,Physical Therapy,North,False,False,True,False,True,False,329.0,False
+509,P096,N18,2024-01-13 21:45:00,2024-01-15 10:57:11.428571428,Medication Administration,Suth,Follow-up urgently required,Medication Administration,South,True,True,False,False,False,False,2232.1904761904666,True
+510,P058,N13,2024-11-03 16:43:00,2024-11-03 17:05:00.000000000,Check up,Weerst,Nil,General Check-up,West,False,False,False,False,True,False,22.0,False
+511,P035,N04,2024-02-21 18:25:00,2024-02-21 22:22:00.000000000,Wund Care,West,No notes provided,Wound Care,West,False,False,False,False,False,False,237.0,False
+512,P071,N01,2024-03-01 02:00:00,2024-03-01 05:31:00.000000000,Check up,Nrth,Lorem ipsum text $%^&,General Check-up,North,False,False,False,False,False,True,211.0,False
+513,P005,N01,2024-03-03 01:38:00,2024-03-03 07:15:00.000000000,Wund Care,Nrth,No notes provided,Wound Care,North,False,False,False,False,False,False,337.0,False
+514,P083,N19,2024-04-01 22:11:00,2024-01-05 00:21:00.000000000,Physical Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,-126590.0,True
+515,P055,N11,2024-02-06 02:17:00,2024-02-06 08:55:00.000000000,Wound Care,North,Nil,Wound Care,North,False,False,False,False,True,False,398.0,False
+516,P023,N15,2024-01-16 06:39:00,2024-01-16 10:01:00.000000000,Phisycal Therapy,East,No notes provided,Physical Therapy,East,False,False,False,False,False,False,202.0,False
+517,P083,N04,2024-02-23 08:06:00,2024-02-23 08:24:00.000000000,Check up,Nrth,urgent attention needed,General Check-up,North,True,False,False,False,False,False,18.0,False
+518,P082,N01,2024-01-22 12:17:00,2024-01-22 13:35:00.000000000,General Check-up,North,Patient stable.,General Check-up,North,False,False,True,False,True,False,78.0,False
+519,P056,N13,2024-03-25 02:34:00,2024-03-25 04:30:00.000000000,Wound Care,North,Lorem ipsum text $%^&,Wound Care,North,False,False,False,False,False,True,116.0,False
+520,P043,N10,2024-02-02 20:41:00,2024-02-02 21:28:00.000000000,General Check-up,Weerst,No notes provided,General Check-up,West,False,False,False,False,False,False,47.0,False
+521,P006,N13,2024-03-07 09:44:00,2024-07-03 13:04:00.000000000,Check up,Weerst,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,170120.0,True
+522,P005,N07,2024-01-24 18:15:00,2024-01-24 22:26:00.000000000,Med Admin,Nrth,No notes provided,Medication Administration,North,False,False,False,False,False,False,251.0,False
+523,P058,N01,2024-01-11 01:21:00,2024-11-01 08:05:00.000000000,Wound Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,425204.0,True
+524,P087,N18,2024-01-24 18:14:00,2024-01-24 22:46:12.151898734,Check up,Esst,Follow-up urgently required,General Check-up,East,True,True,False,False,False,False,272.2025316455667,False
+525,P080,N02,2024-01-23 20:08:00,2024-01-23 20:16:00.000000000,Phisycal Therapy,Esst,urgent attention needed,Physical Therapy,East,True,False,False,False,False,False,8.0,False
+526,P009,N04,2024-01-16 19:51:00,2024-01-17 01:07:00.000000000,Wund Care,Nrth,schedule revisit in 2 days,Wound Care,North,False,True,False,False,False,False,316.0,False
+527,P087,N13,2024-02-04 21:36:00,2024-05-02 02:16:00.000000000,Phisycal Therapy,Weerst,No notes provided,Physical Therapy,West,False,False,False,False,False,False,125560.0,True
+528,P036,N05,2024-06-02 22:23:00,2024-02-07 03:07:00.000000000,Phisycal Therapy,East,schedule revisit in 2 days,Physical Therapy,East,False,True,False,False,False,False,-168196.0,True
+529,P081,N20,2024-02-25 05:01:00,2024-02-25 12:32:00.000000000,Medication Administration,Nrth,Patient stable.,Medication Administration,North,False,False,True,False,True,False,451.0,False
+530,P076,N10,2024-02-23 15:44:00,2024-02-23 16:49:00.000000000,Wund Care,South,urgent attention needed,Wound Care,South,True,False,False,False,False,False,65.0,False
+531,P079,N02,2024-03-06 22:31:00,2024-03-07 03:45:00.000000000,Check up,Suth,Wound will be dressed soon,General Check-up,South,False,False,False,True,False,False,314.0,False
+532,P068,N04,2024-03-12 17:32:00,2024-03-12 19:25:00.000000000,Medication Administration,West,urgent attention needed,Medication Administration,West,True,False,False,False,False,False,113.0,False
+533,P061,N16,2024-01-06 21:59:00,2024-01-06 22:22:00.000000000,Wound Care,Weerst,urgent attention needed,Wound Care,West,True,False,False,False,False,False,23.0,False
+534,P098,N15,2024-01-04 23:03:00,2024-05-01 06:57:00.000000000,Phisycal Therapy,South,Patient stable.,Physical Therapy,South,False,False,True,False,True,False,168954.0,True
+535,P093,N15,2024-03-19 10:26:00,2024-03-19 12:08:00.000000000,General Check-up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,102.0,False
+536,P026,N13,2024-01-03 15:37:00,2024-03-01 19:46:00.000000000,Wound Care,North,Follow-up urgently required,Wound Care,North,True,True,False,False,False,False,83769.0,True
+537,P018,N15,2024-03-07 20:22:00,2024-07-03 22:41:00.000000000,Wund Care,Weerst,Follow-up urgently required,Wound Care,West,True,True,False,False,False,False,170059.0,True
+538,P015,N15,2024-02-14 05:48:00,2024-02-14 08:44:00.000000000,Wund Care,Suth,Follow-up urgently required,Wound Care,South,True,True,False,False,False,False,176.0,False
+539,P071,N08,2024-01-14 16:31:00,2024-01-14 23:53:00.000000000,Wund Care,East,Lorem ipsum text $%^&,Wound Care,East,False,False,False,False,False,True,442.0,False
+540,P032,N08,2024-02-14 18:14:00,2024-02-15 01:51:00.000000000,Phisycal Therapy,Esst,Nil,Physical Therapy,East,False,False,False,False,True,False,457.0,False
+541,P065,N02,2024-02-17 12:30:00,2024-02-17 19:25:00.000000000,Check up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,415.0,False
+542,P094,N14,2024-05-01 11:18:00,2024-01-05 13:21:00.000000000,Check up,Esst,Lorem ipsum text $%^&,General Check-up,East,False,False,False,False,False,True,-168357.0,True
+543,P074,N19,2024-01-15 14:49:00,2024-01-15 16:00:00.000000000,Med Admin,South,No notes provided,Medication Administration,South,False,False,False,False,False,False,71.0,False
+544,P081,N03,2024-02-23 10:33:00,2024-02-23 10:50:00.000000000,Physical Therapy,North,urgent attention needed,Physical Therapy,North,True,False,False,False,False,False,17.0,False
+545,P088,N03,2024-03-11 23:59:00,2024-03-12 00:28:00.000000000,General Check-up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,29.0,False
+546,P047,N06,2024-03-18 22:04:00,2024-03-19 02:52:00.000000000,Wund Care,South,Wound will be dressed soon,Wound Care,South,False,False,False,True,False,False,288.0,False
+547,P097,N19,2024-07-03 23:48:00,2024-08-03 01:44:00.000000000,General Check-up,Weerst,No notes provided,General Check-up,West,False,False,False,False,False,False,43316.0,True
+548,P048,N12,2024-02-16 16:33:00,2024-02-16 23:38:00.000000000,Check up,East,No notes provided,General Check-up,East,False,False,False,False,False,False,425.0,False
+549,P048,N03,2024-01-15 02:05:00,2024-01-15 05:26:00.000000000,Phisycal Therapy,Suth,No notes provided,Physical Therapy,South,False,False,False,False,False,False,201.0,False
+550,P064,N05,2024-01-17 20:01:00,2024-01-17 22:32:00.000000000,Med Admin,South,Lorem ipsum text $%^&,Medication Administration,South,False,False,False,False,False,True,151.0,False
+551,P038,N07,2024-01-01 07:53:00,2024-01-01 12:20:00.000000000,General Check-up,North,Wound will be dressed soon,General Check-up,North,False,False,False,True,False,False,267.0,False
+552,P086,N17,2024-03-15 14:19:00,2024-03-15 19:10:00.000000000,Phisycal Therapy,Suth,Follow-up urgently required,Physical Therapy,South,True,True,False,False,False,False,291.0,False
+553,P099,N02,2024-01-12 09:29:00,2024-12-01 10:55:00.000000000,Phisycal Therapy,Suth,Follow-up urgently required,Physical Therapy,South,True,True,False,False,False,False,466646.0,True
+554,P020,N06,2024-01-04 01:20:00,2024-01-04 06:15:00.000000000,Phisycal Therapy,East,urgent attention needed,Physical Therapy,East,True,False,False,False,False,False,295.0,False
+555,P086,N11,2024-02-05 11:28:00,2024-02-05 16:05:00.000000000,Phisycal Therapy,Suth,No notes provided,Physical Therapy,South,False,False,False,False,False,False,277.0,False
+556,P059,N11,2024-01-01 23:34:00,2024-02-01 03:54:00.000000000,General Check-up,Suth,Lorem ipsum text $%^&,General Check-up,South,False,False,False,False,False,True,43460.0,True
+557,P094,N15,2024-02-23 03:46:00,2024-03-08 21:52:18.591549295,Wound Care,South,No notes provided,Wound Care,South,False,False,False,False,False,False,21246.309859154917,True
+558,P029,N15,2024-02-03 10:03:00,2024-02-03 15:15:00.000000000,Wund Care,West,urgent attention needed,Wound Care,West,True,False,False,False,False,False,312.0,False
+559,P087,N03,2024-03-13 06:31:00,2024-03-13 09:14:00.000000000,Wound Care,Weerst,Nil,Wound Care,West,False,False,False,False,True,False,163.0,False
+560,P048,N01,2024-12-02 11:19:00,2024-02-12 15:08:00.000000000,Check up,West,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,-423131.0,True
+561,P094,N14,2024-03-14 04:53:00,2024-03-14 09:54:00.000000000,Check up,South,schedule revisit in 2 days,General Check-up,South,False,True,False,False,False,False,301.0,False
+562,P043,N03,2024-03-25 12:05:00,2024-03-25 12:09:00.000000000,Med Admin,Suth,Nil,Medication Administration,South,False,False,False,False,True,False,4.0,False
+563,P018,N07,2024-01-27 12:18:00,2024-01-27 17:02:00.000000000,Medication Administration,Esst,urgent attention needed,Medication Administration,East,True,False,False,False,False,False,284.0,False
+564,P029,N01,2024-01-05 08:19:00,2024-01-05 13:47:00.000000000,Medication Administration,Nrth,urgent attention needed,Medication Administration,North,True,False,False,False,False,False,328.0,False
+565,P032,N01,2024-01-25 08:31:00,2024-01-25 09:06:00.000000000,General Check-up,East,Nil,General Check-up,East,False,False,False,False,True,False,35.0,False
+566,P016,N12,2024-03-24 18:01:00,2024-03-25 01:14:00.000000000,Physical Therapy,South,Patient stable.,Physical Therapy,South,False,False,True,False,True,False,433.0,False
+567,P046,N06,2024-01-09 11:26:00,2024-09-01 16:52:00.000000000,General Check-up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,340166.0,True
+568,P025,N06,2024-01-20 05:34:00,2024-01-20 08:20:00.000000000,General Check-up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,166.0,False
+569,P075,N12,2024-01-01 04:33:00,2024-01-01 06:58:00.000000000,General Check-up,East,Nil,General Check-up,East,False,False,False,False,True,False,145.0,False
+570,P029,N07,2024-03-20 22:53:00,2024-03-21 03:23:00.000000000,Check up,North,Lorem ipsum text $%^&,General Check-up,North,False,False,False,False,False,True,270.0,False
+571,P062,N12,2024-02-23 11:08:00,2024-02-25 00:20:11.428571428,Medication Administration,Weerst,Follow-up urgently required,Medication Administration,West,True,True,False,False,False,False,2232.1904761904666,True
+572,P029,N05,2024-03-05 22:14:00,2024-03-06 00:52:00.000000000,Phisycal Therapy,West,Follow-up urgently required,Physical Therapy,West,True,True,False,False,False,False,158.0,False
+573,P010,N01,2024-02-25 13:02:00,2024-02-25 14:43:00.000000000,Check up,Esst,No notes provided,General Check-up,East,False,False,False,False,False,False,101.0,False
+574,P006,N03,2024-02-22 00:48:00,2024-02-22 01:38:00.000000000,Check up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,50.0,False
+575,P096,N09,2024-12-03 11:10:00,2024-03-12 18:28:00.000000000,Wund Care,Nrth,No notes provided,Wound Care,North,False,False,False,False,False,False,-382602.0,True
+576,P037,N06,2024-01-03 23:06:00,2024-02-03 07:00:00.000000000,Wund Care,East,Wound will be dressed soon,Wound Care,East,False,False,False,True,False,False,43674.0,True
+577,P014,N06,2024-02-13 13:13:00,2024-02-13 17:37:00.000000000,Wund Care,North,No notes provided,Wound Care,North,False,False,False,False,False,False,264.0,False
+578,P064,N12,2024-03-10 17:46:00,2024-03-10 18:07:00.000000000,Check up,Weerst,Lorem ipsum text $%^&,General Check-up,West,False,False,False,False,False,True,21.0,False
+579,P040,N15,2024-01-18 13:18:00,2024-01-18 20:36:00.000000000,Med Admin,West,No notes provided,Medication Administration,West,False,False,False,False,False,False,438.0,False
+580,P087,N16,2024-03-04 12:28:00,2024-03-04 16:56:00.000000000,Check up,Nrth,Follow-up urgently required,General Check-up,North,True,True,False,False,False,False,268.0,False
+581,P095,N06,2024-01-12 06:21:00,2024-12-01 08:04:00.000000000,Med Admin,Nrth,schedule revisit in 2 days,Medication Administration,North,False,True,False,False,False,False,466663.0,True
+582,P099,N19,2024-09-03 20:25:00,2024-03-09 23:28:00.000000000,Medication Administration,North,Lorem ipsum text $%^&,Medication Administration,North,False,False,False,False,False,True,-256137.0,True
+583,P016,N09,2024-02-16 07:40:00,2024-02-16 08:49:00.000000000,Wound Care,Nrth,Patient stable.,Wound Care,North,False,False,True,False,True,False,69.0,False
+584,P049,N20,2024-03-11 04:19:00,2024-03-11 09:38:00.000000000,Check up,Nrth,No notes provided,General Check-up,North,False,False,False,False,False,False,319.0,False
+585,P063,N17,2024-02-18 10:51:00,2024-02-18 18:12:00.000000000,Wound Care,Esst,Nil,Wound Care,East,False,False,False,False,True,False,441.0,False
+586,P057,N15,2024-01-02 05:35:00,2024-01-02 11:13:00.000000000,Physical Therapy,South,Lorem ipsum text $%^&,Physical Therapy,South,False,False,False,False,False,True,338.0,False
+587,P098,N04,2024-03-22 15:42:00,2024-03-22 20:26:00.000000000,Medication Administration,East,No notes provided,Medication Administration,East,False,False,False,False,False,False,284.0,False
+588,P076,N13,2024-03-22 11:49:00,2024-03-22 14:15:00.000000000,General Check-up,Esst,Patient stable.,General Check-up,East,False,False,True,False,True,False,146.0,False
+589,P095,N19,2024-01-25 20:21:00,2024-01-25 23:36:00.000000000,Check up,North,Wound will be dressed soon,General Check-up,North,False,False,False,True,False,False,195.0,False
+590,P032,N08,2024-03-10 18:05:00,2024-03-10 22:37:12.151898734,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,272.2025316455667,False
+591,P059,N14,2024-03-17 13:17:00,2024-03-17 13:28:00.000000000,Medication Administration,Esst,Wound will be dressed soon,Medication Administration,East,False,False,False,True,False,False,11.0,False
+592,P063,N04,2024-03-22 06:21:00,2024-03-22 10:36:00.000000000,General Check-up,South,urgent attention needed,General Check-up,South,True,False,False,False,False,False,255.0,False
+593,P010,N18,2024-10-01 08:03:00,2024-10-01 10:36:00.000000000,Med Admin,West,No notes provided,Medication Administration,West,False,False,False,False,False,False,153.0,False
+594,P009,N19,2024-03-16 13:13:00,2024-03-16 16:11:00.000000000,Check up,Suth,No notes provided,General Check-up,South,False,False,False,False,False,False,178.0,False
+595,P054,N13,2024-02-20 16:29:00,2024-02-20 22:13:00.000000000,Phisycal Therapy,Esst,No notes provided,Physical Therapy,East,False,False,False,False,False,False,344.0,False
+596,P096,N15,2024-02-21 17:51:00,2024-02-21 23:06:00.000000000,Med Admin,Esst,No notes provided,Medication Administration,East,False,False,False,False,False,False,315.0,False
+597,P096,N10,2024-02-14 10:55:00,2024-02-14 18:01:00.000000000,Check up,West,Nil,General Check-up,West,False,False,False,False,True,False,426.0,False
+598,P077,N08,2024-02-08 03:09:00,2024-02-08 04:48:00.000000000,Wound Care,West,urgent attention needed,Wound Care,West,True,False,False,False,False,False,99.0,False
+599,P083,N02,2024-01-06 08:08:00,2024-06-01 08:23:00.000000000,Physical Therapy,Suth,No notes provided,Physical Therapy,South,False,False,False,False,False,False,211695.0,True
+600,P063,N01,2024-01-28 02:20:00,2024-01-28 07:29:00.000000000,Physical Therapy,Nrth,No notes provided,Physical Therapy,North,False,False,False,False,False,False,309.0,False
+601,P040,N19,2024-03-13 12:45:00,2024-03-13 14:27:00.000000000,Check up,West,No notes provided,General Check-up,West,False,False,False,False,False,False,102.0,False
+602,P048,N05,2024-03-02 18:35:00,2024-02-03 23:23:00.000000000,General Check-up,Nrth,Nil,General Check-up,North,False,False,False,False,True,False,-40032.0,True
+603,P031,N19,2024-03-07 12:49:00,2024-03-20 03:34:30.508474576,Physical Therapy,Weerst,No notes provided,Physical Therapy,West,False,False,False,False,False,False,18165.50847457627,True

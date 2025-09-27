@@ -1,0 +1,50 @@
+{
+  "descriptive_stats": {
+    "mean": 2279.4557413995067,
+    "median": 72.01220788333333,
+    "std": 9431.65301982419,
+    "min": 5.012218,
+    "max": 43306.01221828334,
+    "count": 500
+  },
+  "service_analysis": {
+    "stats": "                           count     mean  median       std\nservice_type                                               \nBlood Test                    16  2676.64   80.01  10435.60\nGeneral Check-up              23  1926.10   75.01   8694.72\nHealth Assessment             23  1969.75   72.01   9007.78\nMedication Administration     11  3863.92   71.01  12580.03\nPhysical Therapy              20  2160.16   76.01   9346.32\nVaccination                   25  1808.97   49.01   8644.49\nWound Care                    17  2609.72   80.01  10487.24",
+    "longest_service": "Medication Administration",
+    "shortest_service": "Vaccination"
+  },
+  "location_analysis": {
+    "stats": "                count     mean  median       std\nvisit_location                                  \nEast               34  2526.22   78.01   9968.04\nNorth              39  1144.39   53.01   6693.23\nSouth              27  3277.09   85.01  11533.99\nWest               35  2534.93   59.01   9997.74",
+    "anova_p_value": NaN
+  },
+  "nurse_analysis": {
+    "stats": "          count     mean  median       std\nnurse_id                                  \nNURSE_01      7    61.15   56.01     35.52\nNURSE_02     10    60.91   63.01     31.87\nNURSE_03      8    73.14   84.01     29.98\nNURSE_04      3   269.35  109.01    286.41\nNURSE_05      5    61.81   71.01     32.79\nNURSE_06      5    78.81   85.01     27.99\nNURSE_07      7    70.44   72.01     26.30\nNURSE_08      7    65.58   72.01     30.95\nNURSE_09      8  5457.89   48.01  15292.98\nNURSE_10      5  8395.20   30.00  18676.66\nNURSE_11      7    65.30   63.01     20.05\nNURSE_12      6  7111.35  102.01  17000.19\nNURSE_13      9  9583.46  108.01  18689.65\nNURSE_14      3    53.34   39.01     32.93\nNURSE_15      8   137.14   78.51    189.15\nNURSE_16      8  5293.89   74.01  14778.20\nNURSE_17      8    65.01   52.01     39.53\nNURSE_18      9    71.79   78.01     30.30\nNURSE_19      6    45.17   49.01     12.49\nNURSE_20      6  7263.35   63.01  17653.82",
+    "top_3": "          count     mean  median       std\nnurse_id                                  \nNURSE_13      9  9583.46  108.01  18689.65\nNURSE_10      5  8395.20   30.00  18676.66\nNURSE_20      6  7263.35   63.01  17653.82",
+    "bottom_3": "          count   mean  median    std\nnurse_id                             \nNURSE_19      6  45.17   49.01  12.49\nNURSE_14      3  53.34   39.01  32.93\nNURSE_02     10  60.91   63.01  31.87"
+  },
+  "notes_analysis": {
+    "urgent": {
+      "false": 2551.4363868454166,
+      "true": 103.61057783222222
+    },
+    "followup": {
+      "false": 2495.588543701762,
+      "true": 64.09451780138889
+    },
+    "stable": {
+      "false": 1777.6079916516128,
+      "true": 7936.648556739395
+    },
+    "improvement": {
+      "false": 2471.2532508377685,
+      "true": 117.37472591363635
+    },
+    "infection": {
+      "false": 2551.4363868454166,
+      "true": 103.61057783222222
+    },
+    "rescheduled": {
+      "false": 2185.920383801653,
+      "true": 3087.8684749238096
+    }
+  }
+}
