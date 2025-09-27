@@ -3,6 +3,8 @@
 Synthetic Healthcare Data Generator
 This module generates realistic nurse visit data with common data quality issues
 found in real healthcare datasets. It creates synthetic data for analysis practice.
+ Author: SUBHAJIT HALDER 
+       DATE: 27/09/2025
 """
 
 import pandas as pd
