@@ -26,7 +26,7 @@ NursingHome-Analysis/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/littlesteps-analysis.git
+git clone https://github.com/yourusername/NursingHome-analysis.git
 cd littlesteps-analysis
 ```
 
